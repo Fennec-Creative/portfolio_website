@@ -302,26 +302,19 @@ header {
     animation-name: cute;
     animation-delay: 1.5s;
     animation-iteration-count: 1;
-    animation-duration: 2s; }
+    animation-duration: .8s; }
 @keyframes cute {
-  5% {
+  0% {
     background-image: url(/assets/img/logo_blink.png); }
-  10% {
+  30% {
     background-image: url(/assets/img/logo.png); }
-  40% {
-    background-image: url(/assets/img/logo.png); }
-  45% {
-    background-image: url(/assets/img/logo_blink.png); }
-  55% {
+  50% {
     background-image: url(/assets/img/logo.png); }
   60% {
-    background-image: url(/assets/img/logo.png); }
+    background-image: url(/assets/img/logo_blink.png); }
   70% {
-    background-image: url(/assets/img/logo_ears.png); }
-  85% {
-    background-image: url(/assets/img/logo_ears.png); }
-  100% {
-    background-image: url(/assets/img/logo.png); } }
+    background-image: url(/assets/img/logo.png); }
+  
   header .foxy:hover {
     cursor: pointer;
     background-image: url(/assets/img/logo.png);
