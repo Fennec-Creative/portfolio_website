@@ -1,0 +1,172 @@
+$mainText: #656565
+$pFont: 'Source Sans Pro', sans-serif
+
+header
+
+	height: 700px
+	background: #B8D8D8
+
+	.line
+		width: 325px
+		margin: 20px auto
+		border-bottom: 5px solid $mainText
+
+	.foxy
+		cursor: pointer
+		background-image: url(/assets/img/logo.png)
+		background-repeat: no-repeat
+		background-size: contain
+		width: 450px
+		height: 314px
+		display: block
+		margin: 0px auto
+		margin-top: 30px
+
+		animation-name: cute
+		animation-delay: 1.5s
+		animation-iteration-count: 1
+		animation-duration: 2s
+
+		@keyframes cute
+			5%
+				background-image: url(/assets/img/logo_blink.png)
+			10% 
+				background-image: url(/assets/img/logo.png)
+
+			40%
+				background-image: url(/assets/img/logo.png)
+			45%
+				background-image: url(/assets/img/logo_blink.png)
+			55%
+				background-image: url(/assets/img/logo.png)
+
+			60%
+				background-image: url(/assets/img/logo.png)
+			70%
+				background-image: url(/assets/img/logo_ears.png)
+			85% 
+				background-image: url(/assets/img/logo_ears.png)
+			100%
+				background-image: url(/assets/img/logo.png)
+
+	.foxy:hover
+		cursor: pointer
+		background-image: url(/assets/img/logo.png)
+		animation-name: ears
+		animation-delay: 0.2s
+		animation-iteration-count: 1
+		animation-duration: 1s
+
+		@keyframes ears
+			0%
+				background-image: url(/assets/img/logo_blink.png)
+			30%
+				background-image: url(/assets/img/logo.png)
+
+			50% 
+				background-image: url(/assets/img/logo.png)
+			60%
+				background-image: url(/assets/img/logo_blink.png)
+			70%
+				background-image: url(/assets/img/logo.png)
+
+	.foxy:active
+		cursor: pointer
+		background-image: url(/assets/img/logo_ears.png)
+
+	nav
+
+		padding-top: 10px
+		margin: 0px auto
+		text-align: center
+		z-index: 100
+
+		transition: all 0.3s
+		-webkit-transition: all 0.3s
+
+		a
+			display: inline-block
+			margin-left: 10px
+			margin-top: 10px
+			margin-bottom: 10px
+
+			color: #467089
+			font:
+				size: 1.5em
+				weight: 800
+				family: 'Source Sans Pro', sans-serif
+
+		a:hover
+			color: #467089
+			font-size: 1.8em
+			margin-bottom: 0px
+			margin-top: 0px
+
+		a::before,a::after
+			display: inline-block
+			opacity: 0
+			-webkit-transition: -webkit-transform 0.5s 
+			-moz-transition: -moz-transform 0.5s 
+			transition: transform 0.5s 
+
+		a::before
+			margin-right: 5px
+			content: '('
+			-webkit-transform: translateX(20px)
+			-moz-transform: translateX(20px)
+			transform: translateX(20px)
+
+		a::after
+			margin-left: 5px
+			content: ')'
+			-webkit-transform: translateX(-20px)
+			-moz-transform: translateX(-20px)
+			transform: translateX(-20px)
+
+		a:hover::before, a:hover::after, a:focus::before, a:focus::after
+			opacity: 1
+			-webkit-transform: translateX(0px)
+			-moz-transform: translateX(0px)
+			transform: translateX(0px)
+		
+
+
+	nav.sticky
+		padding: 0px
+		background: white
+		position: fixed
+		width: 100%
+		left: 0
+		top: 0
+		z-index: 100
+		border-top: 0
+		a
+			font-size: 1.3em
+
+
+	h1 
+		text-align: center
+		font-family: 'Berkshire Swash', cursive
+		font:
+			size: 5em
+			weight: 700
+		color: $mainText
+		margin: 10px
+		letter-spacing: 0.01em
+		clear: both
+
+	p
+		font-size: 1.5em
+		font-family: 'Source Sans Pro', sans-serif
+
+	span
+		display: inline-block
+		padding: 0px
+		margin: 0px
+
+	.kicker
+		text-align: center
+		font: 
+			weight: 700
+		color: #55544f
+		line-height: 1
