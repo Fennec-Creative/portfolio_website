@@ -790,3 +790,6 @@ section {
     color: #FE5F55; }
   .contact .btn-submit:active {
     background-color: white; }
+  .copyright {
+    text-align: center;
+}
