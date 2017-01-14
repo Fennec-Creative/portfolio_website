@@ -289,7 +289,6 @@ header {
     width: 325px;
     margin: 20px auto;
     border-bottom: 5px solid #656565; }
-
   header .foxyPic {
     opacity: 0;
     animation-name: cute;
@@ -316,7 +315,7 @@ header {
     height: 314px;
     display: block;
     margin: 0px auto;
-
+    margin-top: 30px; }
   header .foxy:hover {
     cursor: pointer;
     background-image: url(/assets/img/logo.png);
@@ -359,10 +358,8 @@ header {
       font-size: 1.8em;
       margin-bottom: 0px;
       margin-top: 0px; }
-
     header nav a:visited {
       color: #467089; }
-
     header nav a::before, header nav a::after {
       display: inline-block;
       opacity: 0;
@@ -427,10 +424,8 @@ footer {
     content: "";
     display: table;
     clear: both; }
-
   footer .copyright {
     text-align: center; }
-
   footer #social {
     text-align: center; }
   footer #copyright {
@@ -553,7 +548,6 @@ section {
       margin: 15px; }
 
 @media only screen and (max-width: 1082px) {
-
   .imageSmall {
     background-image: url(/assets/img/photo_retouch.png);
     background-size: contain;
@@ -605,10 +599,8 @@ section {
     opacity: 0; } }
 .work {
   background: #B8D8D8;
-
   padding-top: 60px;
   padding-bottom: 30px;
-
   margin-bottom: 0px;
   text-align: center;
   overflow-x: hidden; }
@@ -626,9 +618,7 @@ section {
   float: left; }
   .thumb-wrap h1 {
     font-family: "Berkshire Swash", cursive;
-
     color: #656565; }
-
   .thumb-wrap h2 {
     font-family: "Source Sans Pro", sans-serif;
     color: #656565;
@@ -639,38 +629,32 @@ section {
     cursor: pointer;
     background-image: url(/assets/img/design.jpg);
     width: 400px;
-
     height: 340px; }
     .thumb-wrap #smallCircle img {
       opacity: 0;
       transition: all 200ms ease-in-out; }
     .thumb-wrap #smallCircle img:hover {
       opacity: 1; }
-
   .thumb-wrap #smallCircle2 {
     cursor: pointer;
     background-image: url(/assets/img/toolbox.jpg);
     width: 400px;
-
     height: 340px; }
     .thumb-wrap #smallCircle2 img {
       opacity: 0;
       transition: all 200ms ease-in-out; }
     .thumb-wrap #smallCircle2 img:hover {
       opacity: 1; }
-
   .thumb-wrap #largeCircle {
     cursor: pointer;
     background-image: url(/assets/img/featured.jpg);
     width: 500px;
-
     height: 426px; }
     .thumb-wrap #largeCircle img {
       opacity: 0;
       transition: all 200ms ease-in-out; }
     .thumb-wrap #largeCircle img:hover {
       opacity: 1; }
-
   .thumb-wrap .thumbUnit {
     text-align: center;
     position: relative;
@@ -758,7 +742,6 @@ section {
       height: 319.5px !important; }
     #largeCircle img:hover {
       opacity: 1; } }
-
 .contact {
   background: url(../img/paper.png);
   text-align: center; }
@@ -806,7 +789,6 @@ section {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 1.7em;
     font-weight: bold;
-
     color: #656565; }
   .contact .pull-right {
     float: left;
@@ -826,7 +808,6 @@ section {
   .contact .submit-button {
     float: right;
     margin-right: 10%; }
-
   .contact .btn-submit {
     box-sizing: border-box;
     position: relative;
@@ -837,9 +818,7 @@ section {
     padding: 5px 20px;
     display: inline-block;
     margin-top: 0px;
-
     margin-right: 10%;
-
     color: white;
     background-color: #FE5F55;
     border-width: 0 0 0 0;
@@ -877,4 +856,3 @@ section {
 
   .submit-button {
     margin-right: 45% !important; } }
-
