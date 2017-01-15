@@ -1,6 +1,10 @@
 <head>
 	<style type="text/css">
 
+  #topFont {
+    margin-top: 60px;
+  }
+
 	#halfFox {
   position: absolute;
   margin-left: 280px;
@@ -65,8 +69,17 @@
 	#skillMas {
 		background: url(/assets/img/paper.png);
     padding: 40px;
-
 	}
+
+  .barChart {
+    display: block;
+    width: 70%;
+    margin: 0px auto;
+  }
+
+ #skillMas svg {
+  width: 100%;
+}
 
 	#skillMas h1 {
 		color: #656565;
@@ -196,9 +209,6 @@
 
 
 
-
-
-
 .animation-target {
   -webkit-animation: animation 5000ms linear both;
   animation: animation 5000ms linear both;
@@ -256,14 +266,22 @@
   100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
 }
 
+@media only screen and (max-width: 1081px) {
+  .devFont{
+    font-size: 3.5em;
+  }
 
+  .topFont svg{
+    viewBox:0 0 40 396.896;
+  }
+}
 
 	</style>
 
 </head>
 <body>
 	<div id="designDiv">
-		<h1>Technical Knowlege</h1>
+		<h1 class="devFont" id="topFont">Technical Knowlege</h1>
     <img class="threeFloat" id="halfFox" src="/assets/img/work/toolkit/half-fox.png" />
 		<div class="threeFloat" id="designBox">
 			<h2 class="hdesign">Design</h2>
@@ -344,7 +362,7 @@
 		</div>
 	</div>
 	<div id="workKnow">
-		<h1>Working Knowlege</h1>
+		<h1 class="devFont">Working Knowlege</h1>
 		<div class="twoWork" id="liOne">
 			<ul>
 				<li>GIT</li>
@@ -361,11 +379,10 @@
 		</div>
 	</div>
 	<div id="skillMas">
-		<h1>Skill Mastery</h1>
+		<h1 class="devFont">Skill Mastery</h1>
     <div class="barChart">
       
-      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   width="967px" height="489px" viewBox="0 0 967 489" enable-background="new 0 0 967 579" xml:space="preserve">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="967px" height="489px" viewBox="0 0 967 489" enable-background="new 0 0 967 579" xml:space="preserve" preserveAspectRatio="xMinYMin">
 <rect class="bar" id="bar1" x="55" y="38" fill="#FE5F55" width="104" height="480"/>
 <rect class="bar" id="bar2" x="238" y="40" fill="#7A9E9F" width="104" height="448"/>
 <rect class="bar" id="bar3" x="424" y="65" fill="#FE5F55" width="102" height="425"/>

@@ -18,14 +18,12 @@
 	#rings {
 		background-color: #B8D8D8;
 		margin-bottom: 40px;
-		overflow: auto;
 	}
 
 
 	#backpack {
 		background-color: #EEF5DB;
 		padding: 20px;
-		overflow: auto;
 	}
 
 	#backpack img{
@@ -35,7 +33,6 @@
 	#butterfly {
 		background-color: #7A9E9F;
 		padding-top: 40px;
-		overflow: auto;
 	}
 
 	#abstract {
@@ -58,6 +55,7 @@
 
 	#fireTribe {
 		padding: 20px;
+		padding-top: 60px;
 		overflow: auto;
 	}
 
@@ -227,6 +225,63 @@
 		float:left;
 	}
 
+@media only screen and (max-width: 1359px) {
+    #paragraph, #paragraphB, #paragraphC,#paragraphD, #paragraphE, #paragraphF {
+		width: 80% !important;
+		float: none;
+		display: block;
+		margin: 0 auto;
+    	}
+
+    .hvrButton {
+    	width: auto !important;
+    }
+
+    .modelpic {
+		float: none;
+		display: block;
+		margin: 0 auto;
+		background-size: contain;
+		width:444.75px;
+		height:586.5px;
+	}
+
+	.ringspic {
+		float: none;
+		display: block;
+		margin: 0 auto;
+		width:526.4px;
+		height:240px;
+		background-size: contain;
+	}
+
+	#model, #rings, #backpack, #butterfly, #abstract, #tree, #cat, #fireTribe {
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+
+	.desClass {
+		margin-top: 4%;
+		margin-bottom: 4%;
+	}
+
+	.desH{
+		font-size: 3.5em;
+		margin-top: 5%;
+	}
+}
+
+@media only screen and (max-width: 560px) {
+	.modelpic {
+		width:355.8px;
+		height:469.2px;
+	}
+	.ringspic {
+		width:394.8px;
+		height:180px;
+	}
+}
+
 	</style>
 	<script async>
 		$(document).ready(function(){
@@ -241,7 +296,7 @@
 <body>
 
 <div id="fireTribe">
-<h1>Vector Illustration</h1>
+<h1 class="desH">Vector Illustration</h1>
 <img src="/assets/img/work/design/fireTribe.png" alt="illustration">
 <div id="paragraphB">
 <p>
@@ -257,7 +312,7 @@
 </div>
 
 <div id="model">
-<h1>Digital Retouching</h1>
+<h1 class="desH">Digital Retouching</h1>
 <div class="modelpic" id="modelz">
 </div>
 <div id="paragraph">
@@ -297,8 +352,8 @@
 </div>
 
 <div id ="backpack">
-<h1 style="color: #467089;">Product Design</h1>
-<img src="/assets/img/work/design/backpack.jpg" alt="Acusites Examples">
+<h1 class="desH" style="color: #467089;">Product Design</h1>
+<img src="/assets/img/work/design/backpack.jpg" class="desClass" alt="Acusites Examples">
 <div id="paragraphC">
 <p>
 	<b>Client:</b> Private Startup</p>
@@ -311,8 +366,8 @@
 </div>
 
 <div id="butterfly">
-<h1 style="color: #EEF5DB">Photomanipulation</h1>
-<img src="/assets/img/work/design/butterfly-after.jpg" alt="Acusites Examples">
+<h1 class="desH" style="color: #EEF5DB">Photomanipulation</h1>
+<img src="/assets/img/work/design/butterfly-after.jpg" class="desClass" alt="Acusites Examples">
 <div id="paragraphD">
 <p>
 <b>Personal Project:</b> Inspired by surrealism, this image was created using a fusion of photomanipulation, texture overlays, and image compilation  
@@ -321,7 +376,7 @@
 </div>
 
 <div id="abstract">
-<img src="/assets/img/work/design/abstract.jpg" alt="Acusites Examples">
+<img src="/assets/img/work/design/abstract.jpg" alt="Acusites Examples" class="desClass">
 <div id="paragraph">
 <p>
 <b>Personal Project:</b> Inspired by abstractionism, this image was created using a fusion of photomanipulation, texture overlays, and digital illustration
@@ -330,8 +385,8 @@
 </div>
 
 <div id="tree">
-<h1>Digital Illustration</h1>
-<img src="/assets/img/work/design/illustration-tree.jpg" alt="Acusites Examples">
+<h1 class="desH">Digital Illustration</h1>
+<img src="/assets/img/work/design/illustration-tree.jpg" class="desClass" alt="Acusites Examples">
 <div id="paragraphE">
 <p>
 <b>Personal Project:</b> Inspired by surrealism, this image was painted digitally with the use of a stylus and minor texturing and photo-enhancement
@@ -340,7 +395,7 @@
 </div>
 
 <div id="cat">
-<img src="/assets/img/work/design/illustration-cat.jpg" alt="Acusites Examples">
+<img src="/assets/img/work/design/illustration-cat.jpg" class="desClass" alt="Acusites Examples">
 <div id="paragraphF">
 <p><b>Client:</b> Misc</p>
 	<p><b>Role:</b> Digital Illustration </p>

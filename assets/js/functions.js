@@ -2,7 +2,6 @@
 $( document ).ready(function() {
   workBelt();
   workload();
-  aboutShow();
 });
 
 function workBelt() {
@@ -64,16 +63,3 @@ function workload() {
 	});
 
 }
-
-function aboutShow() {
-	$(window).on('resize', function(event){
-    	var windowWidth = $(window).width();
-		if(windowWidth < 768){
-			$('.aboutSmall').addClass("showMe");
-		}
-		else{
-			$('.aboutSmall').removeClass("showMe");
-		}
-	});
-}
-
