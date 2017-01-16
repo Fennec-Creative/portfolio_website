@@ -5,15 +5,17 @@
     margin-top: 60px;
   }
 
-	#halfFox {
-  position: absolute;
-  margin-left: 280px;
-  margin-top: 85px;
-  z-index: 11;
+  #pieChart {
+    width: 400px;
   }
 
   #pieChart svg {
-    z-index: 3;
+    background-image: url("/assets/img/work/toolkit/half-fox.jpg");
+    width: 100%;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 	
 	#designDiv h1 {
@@ -73,8 +75,12 @@
 
   .barChart {
     display: block;
-    width: 70%;
+    width: 967px;
     margin: 0px auto;
+  }
+
+  .barChart svg {
+    width: 100%;
   }
 
  #skillMas svg {
@@ -156,6 +162,7 @@
     text-align: center;
     position: relative;
     display: inline-block;
+    width: 175px;
   }
 
   #designBox ul{
@@ -184,30 +191,6 @@
   #devBox{
     bottom: 55px;
   }
-
-
-  #writng {
-    width: 175px;
-  }
-
-
- #codng {
-   width: 175px;
-  }
-
-  #troubl {
-    width: 175px;
-  }
-
-  #dance {
-    width: 175px;
-  }
-
-  #illustr {
-    width: 175px;
-  }
-
-
 
 .animation-target {
   -webkit-animation: animation 5000ms linear both;
@@ -266,23 +249,160 @@
   100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
 }
 
-@media only screen and (max-width: 1081px) {
+
+
+@media only screen and (max-width: 1085px) {
   .devFont{
     font-size: 3.5em;
+    margin-bottom: 10px !important;
+    margin-top: 40px;
   }
 
-  .topFont svg{
-    viewBox:0 0 40 396.896;
+  #pieChart {
+    width: 320px;
   }
+.barChart {
+   width: 725.25px;
+  }
+
+.threeFloat {
+    margin: 10px;
+    line-height: 2em;
 }
 
-	</style>
+.threeFloat h2 {
+  margin: 5px;
+}
+
+.skillItem p {
+  font-size: 1.5em !important;
+}
+
+.skillItem {
+  width: 131.25px;
+}
+
+.skillList {
+  margin-top: -100px;
+}
+
+@media only screen and (max-width: 887px) {
+
+  #pieChart {
+    width: 240px;
+  }
+
+  .barChart {
+   width: 510px;
+  }
+
+  .threeFloat {
+    margin: 1px;
+  }
+
+  .threeFloat h2 {
+    margin: 1px;
+    font-size: 2em;
+  }
+
+  .twoWork {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #workKnow {
+    padding: 10px;
+   }
+
+  .skillItem {
+  width: 92px;
+  }
+
+  .skillItem p {
+  font-size: 1.1em !important;
+  }
+
+.skillList {
+  margin-top: -210px;
+  }
+
+  }
+
+@media only screen and (max-width: 632px) {
+  .devFont{
+    padding: 0px;
+    }
+  #devBox{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    bottom: 0px;
+    margin-top: -20px;
+  }
+
+  #devBox li {
+    text-align: center;
+  }
+
+ #designBox{
+    margin: 0 auto;
+    display: block;
+    width:100%;
+    position: static;
+    bottom: 0px;
+    padding-top: 20px;
+    margin-bottom: -40px;
+  }
+
+  #designBox li{
+    text-align:center;
+  }
+
+  .twoWork {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+   .barChart {
+   width: 270px;
+  }
+
+  #skillMas {
+    padding: 5px 5px 60px 5px;
+  }
+
+  .skillItem {
+  width: 50px;
+  left: -10px;
+  transform: rotate(90deg);
+  }
+
+  .skillList {
+  margin-top: -350px;
+  }
+
+  #octoCat {
+    width: 112.5px;
+    height: 93.75px;
+    display: block;
+    margin: 0px auto;
+  }
+
+  #gitHub p {
+    font-size: 0.7em;
+  }
+
+}
+
+
+</style>
 
 </head>
 <body>
 	<div id="designDiv">
 		<h1 class="devFont" id="topFont">Technical Knowlege</h1>
-    <img class="threeFloat" id="halfFox" src="/assets/img/work/toolkit/half-fox.png" />
 		<div class="threeFloat" id="designBox">
 			<h2 class="hdesign">Design</h2>
 			<ul>
@@ -293,9 +413,7 @@
 		</div>
 		<div class="threeFloat" id="pieChart">
       
-      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   width="396.504px" height="396.896px" viewBox="0 0 396.504 396.896" enable-background="new 0 0 396.504 396.896"
-   xml:space="preserve">
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="396.504px" height="396.896px" viewBox="0 0 396.504 396.896" enable-background="new 0 0 396.504 396.896" xml:space="preserve">
 <path class="blue" 
   fill="#B8D8D8" 
   stroke="#467089"
@@ -382,22 +500,22 @@
 		<h1 class="devFont">Skill Mastery</h1>
     <div class="barChart">
       
-      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="967px" height="489px" viewBox="0 0 967 489" enable-background="new 0 0 967 579" xml:space="preserve" preserveAspectRatio="xMinYMin">
-<rect class="bar" id="bar1" x="55" y="38" fill="#FE5F55" width="104" height="480"/>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="967px" height="489px" viewBox="0 0 967 489" enable-background="new 0 0 967 579" xml:space="preserve" preserveAspectRatio="xMinYMin">
+<rect class="bar" id="bar1" x="55" y="7" fill="#FE5F55" width="104" height="480"/>
 <rect class="bar" id="bar2" x="238" y="40" fill="#7A9E9F" width="104" height="448"/>
-<rect class="bar" id="bar3" x="424" y="65" fill="#FE5F55" width="102" height="425"/>
+<rect class="bar" id="bar3" x="424" y="63" fill="#FE5F55" width="102" height="425"/>
 <rect class="bar" id="bar4" x="610" y="37" fill="#7A9E9F" width="103" height="449"/>
-<rect class="bar pop" id="bar5" x="795" y="451" fill="#FE5F55" width="102" height="50"/>
+<rect class="bar pop" id="bar5" x="795" y="438" fill="#FE5F55" width="102" height="50"/>
 <rect id="bar6" y="478" fill="#656565" width="967" height="11"/>
 </svg>
 
     </div>
     <div class="skillList">
-		<div class="skillItem" id="illustr"><p>Illustration</p></div>
-		<div class="skillItem" id="codng"><p>Coding</p></div>
-		<div class="skillItem" id="writng"><p>Writing</p></div>
-		<div class="skillItem" id="troubl"><p>Troubleshooting</p></div>
-		<div class="skillItem" id="dance"><p>Dancing</p></div>
+		<div class="skillItem"><p>Illustration</p></div>
+		<div class="skillItem"><p>Coding</p></div>
+		<div class="skillItem"><p>Writing</p></div>
+		<div class="skillItem"><p>Troubleshooting</p></div>
+		<div class="skillItem"><p>Dancing</p></div>
     </div>
 	</div>
 	<div id ="gitHub">

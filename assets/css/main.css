@@ -625,7 +625,8 @@ section {
   .container {
     height: 900px !important; }
     .container h1 {
-      font-size: 2em !important; }
+      font-size: 2em !important;
+      margin-bottom: 10px; }
 
   p {
     line-height: 1.1 !important; } }
@@ -776,7 +777,40 @@ section {
       opacity: 1; } }
 @media only screen and (max-width: 768px) {
   .thumb-wrap h1 {
-    font-size: 3em !important; } }
+    font-size: 3em !important; }
+
+  #smallCircle {
+    width: 240px !important;
+    height: 204px !important; }
+    #smallCircle img {
+      opacity: 0;
+      transition: all 200ms ease-in-out;
+      width: 240px !important;
+      height: 204px !important; }
+    #smallCircle img:hover {
+      opacity: 1; }
+
+  #smallCircle2 {
+    width: 240px !important;
+    height: 204px !important; }
+    #smallCircle2 img {
+      opacity: 0;
+      transition: all 200ms ease-in-out;
+      width: 240px !important;
+      height: 204px !important; }
+    #smallCircle2 img:hover {
+      opacity: 1; }
+
+  #largeCircle {
+    width: 300px !important;
+    height: 255.6px !important; }
+    #largeCircle img {
+      opacity: 0;
+      transition: all 200ms ease-in-out;
+      width: 300px !important;
+      height: 255.6px !important; }
+    #largeCircle img:hover {
+      opacity: 1; } }
 .contact {
   background: url(../img/paper.png);
   text-align: center; }
