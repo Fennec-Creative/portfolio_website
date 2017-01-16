@@ -1,0 +1,194 @@
+$mainText: #656565
+
+section
+	background: url(../img/paper.png)
+
+	h1
+		font-family: 'Berkshire Swash', cursive
+		margin-bottom: 30px
+		margin-top: 0px
+		color: #467089
+		-webkit-transition: 1s
+		transition: 1s
+
+	p
+		font-family: 'Source Sans Pro', sans-serif
+		line-height: 1.3em
+
+	.container
+		width: 100%
+		position: relative
+		height: 750px
+
+		.image
+			position: relative
+
+		.image.slide-left
+
+			-moz-transition: all 500ms ease-in-out
+			-webkit-transition: all 500ms ease-in-out
+			transition: all 500ms ease-in-out
+
+			-moz-transform: translate3d(-100px, 0px, 0px)
+			-webkit-transform: translate3d(-100px, 0px, 0px)
+			transform: translate(-100px)
+
+		.image.slide-left.show
+			background-image: url(/assets/img/photo_retouch.png)
+			background-size: contain
+			width: 505px
+			height: 700px
+			display: block
+			position: absolute
+			top: 50px
+			left: 0px
+			margin-left: 10%
+			z-index: 50
+
+			-moz-transform: translate3d(0px, 0px, 0px)
+			-webkit-transform: translate3d(0px, 0px, 0px)
+			-ms-transform: translate(0px, 0px)
+			transform: translate3d(0px, 0px, 0px) 
+
+		.black
+			position: relative
+
+		.black.slide-up
+
+			-moz-transition: all 500ms ease-in-out
+			-webkit-transition: all 500ms ease-in-out
+			transition: all 800ms ease-in-out
+
+			-moz-transform: translate3d(-100px, 0px, 0px)
+			-webkit-transform: translate3d(-100px, 0px, 0px)
+			transform: translate(-500)
+
+
+		.black.slide-up.show-black
+			background-image: url(/assets/img/about.png)
+			background-size: contain
+			width: 1080px
+			height: 292px
+			display: block
+			position: absolute
+			top: 459px
+			left: 0px
+			z-index: 1
+
+			-moz-transform: translate3d(0px, 0px, 0px)
+			-webkit-transform: translate3d(0px, 0px, 0px)
+			-ms-transform: translate(0px, 0px)
+			transform: translate3d(0px, 0px, 0px)
+
+		.about
+			position: absolute
+			width: 40%
+			top: 100px
+			left: 0px
+			margin-left: 50%
+			z-index: 50
+			font-size: 1.5em
+			font-family: 'Source Sans Pro', sans-serif
+			padding: 5px
+
+		.aboutSmall
+			opacity: 0
+
+		.aboutSmall.showMe
+			opacity: 1
+			float: left
+			width: 100%
+
+		.design
+			display: block
+			width: auto
+			margin: 0 0 15px 0
+			text-align: center
+
+		.development
+			float: right
+
+	#skills
+		height: 200px
+		margin-top: 60px 
+		background: none
+
+		img
+			position: relative
+			display: inline-block
+			float: right
+			width: 75px
+			margin: 15px
+
+@media only screen and (max-width: 1082px)
+	
+	.imageSmall
+		background-image: url(/assets/img/photo_retouch.png)
+		background-size: contain
+		width: 429.25px
+		height: 595px
+		display: block
+		position: absolute
+		top: 155px
+		left: 0px
+		margin-left: 5%
+		z-index: 50
+
+	.image
+		opacity: 0
+
+	h1
+		font-size: 2.5em
+
+
+@media only screen and (max-width: 768px)
+	.imageSmall
+		background-image: url(/assets/img/photo_retouch.png)
+		background-size: contain
+		width: 378.75px
+		height: 525px
+		display: block
+		position: absolute
+		top: 375px
+		left: 0px
+		margin-left: 1%
+		z-index: 50
+
+	.image
+		opacity: 0
+
+	.black
+		opacity: 0
+
+	.blackSmall
+		background-image: url(/assets/img/about.png)
+		background-size: contain
+		width: 810px
+		height: 219px
+		display: block
+		position: absolute
+		top: 682px
+		left: 0px
+		z-index: 1
+
+	.about
+		position: absolute
+		width: 100% !important
+		top: 0px !important
+		left: 0px
+		margin-left: 0 !important
+		z-index: 50
+		font-size: 1.5em
+		font-family: 'Source Sans Pro', sans-serif
+		padding: 5px
+		margin-top: 15px
+
+	.container
+		height: 900px !important
+
+		h1
+			font-size: 2em !important
+			margin-bottom: 10px
+
+	p
+		line-height: 1.1 !important

@@ -1,0 +1,198 @@
+$mainText: #656565
+
+.work
+	background: #B8D8D8
+	padding-bottom: 30px
+	margin-bottom: 0px
+	text-align: center
+	overflow-x: hidden
+
+.work-belt
+	width: 200%
+	position: relative
+	left: 0%
+	+transition(all 800ms)
+
+.thumb-wrap
+	width: 50%
+	float: left 
+
+	h1
+		font-family: 'Berkshire Swash', cursive
+		color: $mainText
+		margin-top: 60px
+
+	h2
+		font-family: 'Source Sans Pro', sans-serif
+		color: $mainText
+		font-weight: bold
+		padding: 25px
+		margin-top: 25%
+
+	#smallCircle
+		cursor: pointer
+		background-image: url(/assets/img/design.jpg)
+		width: 400px
+		height: 340px
+		img
+			opacity: 0
+			transition: all 200ms ease-in-out
+		img:hover
+			opacity: 1
+
+	#smallCircle2
+		cursor: pointer
+		background-image: url(/assets/img/toolbox.jpg)
+		width: 400px
+		height: 340px
+		img
+			opacity: 0
+			transition: all 200ms ease-in-out
+		img:hover
+			opacity: 1
+
+	#largeCircle
+		cursor: pointer
+		background-image: url(/assets/img/featured.jpg)
+		width: 500px
+		height: 426px
+		img
+			opacity: 0
+			transition: all 200ms ease-in-out
+		img:hover
+			opacity: 1
+
+	.thumbUnit
+		text-align: center
+		position: relative
+		display: inline-block
+		vertical-align: middle
+		h2
+			padding: 0px
+			margin: 0px
+			font-family: 'Source Sans Pro', sans-serif
+			font-size: 2em
+
+	.thumbUnit:hover
+		h2
+			color: #467089
+
+.work-wrap
+	width: 50%
+	float: left
+
+	.work-container
+		max-width: 100%
+		margin: 0px auto
+		display: none
+
+		h3
+			color: $mainText
+
+		img
+			max-width: 100%
+
+	.work-return
+		+size(40px)
+		cursor: pointer
+		opacity: 0.8
+		position: absolute
+		padding: 20px
+
+		@media (max-width: 740px)
+			position: relative
+
+		svg
+			transition: all 500ms ease-in-out
+			fill: #656565
+			
+
+		svg:hover
+			fill: #FE5F55
+			stroke: #FE5F55
+			stroke-width: 3px
+
+@media only screen and (max-width: 1125px)
+	.thumb-wrap
+		h1
+			font-size: 4em !important
+
+	#smallCircle
+		cursor: pointer
+		background-image: url(/assets/img/design.jpg)
+		width: 300px !important
+		height: 255px !important
+		background-size: contain
+		img
+			opacity: 0
+			transition: all 200ms ease-in-out
+			width: 300px !important
+			height: 255px !important
+		img:hover
+			opacity: 1
+
+	#smallCircle2
+		cursor: pointer
+		background-image: url(/assets/img/toolbox.jpg)
+		width: 300px !important
+		height: 255px !important
+		background-size: contain
+		img
+			opacity: 0
+			transition: all 200ms ease-in-out
+			width: 300px !important
+			height: 255px !important
+		img:hover
+			opacity: 1
+
+	#largeCircle
+		cursor: pointer
+		background-image: url(/assets/img/featured.jpg)
+		width: 375px !important
+		height: 319.5px !important
+		background-size: contain
+		img
+			opacity: 0
+			transition: all 200ms ease-in-out
+			width: 375px !important
+			height: 319.5px !important
+		img:hover
+			opacity: 1
+
+@media only screen and (max-width: 768px)
+	.thumb-wrap
+		h1
+			font-size: 3em !important
+
+	#smallCircle
+		width: 240px !important
+		height: 204px !important
+		img
+			opacity: 0
+			transition: all 200ms ease-in-out
+			width: 240px !important
+			height: 204px !important
+		img:hover
+			opacity: 1
+
+	#smallCircle2
+		width: 240px !important
+		height: 204px !important
+		img
+			opacity: 0
+			transition: all 200ms ease-in-out
+			width: 240px !important
+			height: 204px !important
+		img:hover
+			opacity: 1
+
+	#largeCircle
+		width: 300px !important
+		height: 255.6px !important
+		img
+			opacity: 0
+			transition: all 200ms ease-in-out
+			width: 300px !important
+			height: 255.6px !important
+		img:hover
+			opacity: 1
