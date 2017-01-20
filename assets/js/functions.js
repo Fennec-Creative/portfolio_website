@@ -1,4 +1,6 @@
 
+$('.image').removeClass("show");
+
 $( document ).ready(function() {
   workBelt();
   workload();

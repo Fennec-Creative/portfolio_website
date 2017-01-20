@@ -319,10 +319,31 @@ header {
   header .foxy:hover {
     cursor: pointer;
     background-image: url(/assets/img/logo.png);
-    animation-name: ears;
-    animation-delay: 0.2s;
-    animation-iteration-count: 1;
-    animation-duration: 1s; }
+    -webkit-animation: 1s linear 0.2s 1 ears;
+    -moz-animation: 1s linear 0.2s 1 ears;
+    animation: 1s linear 0.2s 1 ears; }
+@-webkit-keyframes ears {
+  0% {
+    background-image: url(/assets/img/logo_blink.png); }
+  30% {
+    background-image: url(/assets/img/logo.png); }
+  50% {
+    background-image: url(/assets/img/logo.png); }
+  60% {
+    background-image: url(/assets/img/logo_blink.png); }
+  70% {
+    background-image: url(/assets/img/logo.png); } }
+@-moz-keyframes ears {
+  0% {
+    background-image: url(/assets/img/logo_blink.png); }
+  30% {
+    background-image: url(/assets/img/logo.png); }
+  50% {
+    background-image: url(/assets/img/logo.png); }
+  60% {
+    background-image: url(/assets/img/logo_blink.png); }
+  70% {
+    background-image: url(/assets/img/logo.png); } }
 @keyframes ears {
   0% {
     background-image: url(/assets/img/logo_blink.png); }
@@ -343,7 +364,8 @@ header {
     text-align: center;
     z-index: 100;
     transition: all 0.3s;
-    -webkit-transition: all 0.3s; }
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s; }
     header nav a {
       display: inline-block;
       margin-left: 10px;
