@@ -447,7 +447,10 @@ header {
       height: 235.5px !important; }
 
   h1 {
-    font-size: 3em !important; } }
+    font-size: 3em !important; }
+
+  .line {
+    width: 250px !important; } }
 footer {
   background: #7A9E9F;
   padding: 30px;
@@ -492,7 +495,6 @@ section {
   section h1 {
     font-family: "Berkshire Swash", cursive;
     margin-bottom: 30px;
-    margin-top: 0px;
     color: #467089;
     -webkit-transition: 1s;
     transition: 1s; }
@@ -600,9 +602,13 @@ section {
   .image {
     opacity: 0; }
 
-  h1 {
-    font-size: 2.5em; } }
-@media only screen and (max-width: 768px) {
+  #abouthh {
+    font-size: 2.5em;
+    margin-bottom: 10px !important; } }
+@media only screen and (max-width: 834px) {
+  #abouthh {
+    font-size: 2em !important; } }
+@media only screen and (max-width: 788px) {
   .imageSmall {
     background-image: url(/assets/img/photo_retouch.png);
     background-size: contain;
@@ -634,10 +640,10 @@ section {
 
   .about {
     position: absolute;
-    width: 100% !important;
+    width: 90% !important;
     top: 0px !important;
     left: 0px;
-    margin-left: 0 !important;
+    margin-left: 5% !important;
     z-index: 50;
     font-size: 1.5em;
     font-family: "Source Sans Pro", sans-serif;
@@ -645,18 +651,26 @@ section {
     margin-top: 15px; }
 
   .container {
-    height: 910px !important; }
-    .container h1 {
-      font-size: 2em !important;
-      margin-bottom: 10px; }
+    height: 910px !important; } }
+@media only screen and (max-width: 469px) {
+  .imageSmall {
+    width: 303px;
+    height: 420px;
+    top: 540px; }
 
-  p {
-    line-height: 1.1 !important; } }
+  .blackSmall {
+    width: 607.5px;
+    height: 164.25px;
+    top: 796px; }
+
+  .container {
+    height: 960px !important; } }
 .work {
   background: #B8D8D8;
   padding-bottom: 30px;
   margin-bottom: 0px;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
 
 .work-belt {
   width: 200%;
@@ -743,7 +757,6 @@ section {
     margin: 20px;
     padding-top: 10px;
     transition: all 500ms ease-in-out;
-    overflow: hidden;
     animation: bounce-up 2s infinite; }
     @media (max-width: 740px) {
       .work-wrap .work-up {
@@ -892,10 +905,14 @@ section {
       width: 300px !important;
       height: 255.6px !important; }
     #largeCircle img:hover {
-      opacity: 1; } }
+      opacity: 1; }
+
+  .arrow-container {
+    height: 75px; } }
 .contact {
   background: url(../img/paper.png);
-  text-align: center; }
+  text-align: center;
+  padding: 50px; }
   .contact #formCandy {
     width: 100%;
     max-width: 1200px;
@@ -934,7 +951,6 @@ section {
     font-family: "Berkshire Swash", cursive;
     color: #656565;
     margin: 0px auto;
-    padding-top: 70px;
     font-size: 4em; }
   .contact p {
     font-family: "Source Sans Pro", sans-serif;
@@ -987,7 +1003,7 @@ section {
   .contact .btn-submit:active {
     background-color: white; }
 
-@media only screen and (max-width: 1136px) {
+@media only screen and (max-width: 1236px) {
   input {
     width: 100%; }
 
