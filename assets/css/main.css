@@ -289,12 +289,6 @@ header {
     width: 325px;
     margin: 20px auto;
     border-bottom: 5px solid #656565; }
-  header .foxyPic {
-    opacity: 0;
-    animation-name: cute;
-    animation-delay: 1.5s;
-    animation-iteration-count: 1;
-    animation-duration: 1s; }
 @keyframes cute {
   0% {
     opacity: 1; }
@@ -308,56 +302,51 @@ header {
     opacity: 0; } }
   header .foxy {
     cursor: pointer;
-    background-image: url(/assets/img/logo.png);
+    background-image: url(/assets/img/sprites.png);
     background-repeat: no-repeat;
-    background-size: contain;
     width: 450px;
     height: 314px;
     display: block;
     margin: 0px auto;
-    margin-top: 30px; }
+    margin-top: 30px;
+    background-position: opx;
+    -webkit-animation: ears 1.5s steps(7) 1;
+    -moz-animation: ears 1.5s steps(7) 1;
+    -ms-animation: ears 1.5s steps(7) 1;
+    -o-animation: ears 1.5s steps(7) 1;
+    animation: ears 1.5s steps(7) 1; }
+@-webkit-keyframes ears {
+  from {
+    background-position: 0px; }
+  to {
+    background-position: -3150px; } }
+@-moz-keyframes ears {
+  from {
+    background-position: 0px; }
+  to {
+    background-position: -3150px; } }
+@-ms-keyframes ears {
+  from {
+    background-position: 0px; }
+  to {
+    background-position: -3150px; } }
+@-o-keyframes ears {
+  from {
+    background-position: 0px; }
+  to {
+    background-position: -3150px; } }
+@keyframes ears {
+  from {
+    background-position: 0px; }
+  to {
+    background-position: -3150px; } }
   header .foxy:hover {
     cursor: pointer;
-    background-image: url(/assets/img/logo.png);
-    -webkit-animation: 1s linear 0.2s 1 ears;
-    -moz-animation: 1s linear 0.2s 1 ears;
-    animation: 1s linear 0.2s 1 ears; }
-@-webkit-keyframes ears {
-  0% {
-    background-image: url(/assets/img/logo_blink.png); }
-  30% {
-    background-image: url(/assets/img/logo.png); }
-  50% {
-    background-image: url(/assets/img/logo.png); }
-  60% {
-    background-image: url(/assets/img/logo_blink.png); }
-  70% {
-    background-image: url(/assets/img/logo.png); } }
-@-moz-keyframes ears {
-  0% {
-    background-image: url(/assets/img/logo_blink.png); }
-  30% {
-    background-image: url(/assets/img/logo.png); }
-  50% {
-    background-image: url(/assets/img/logo.png); }
-  60% {
-    background-image: url(/assets/img/logo_blink.png); }
-  70% {
-    background-image: url(/assets/img/logo.png); } }
-@keyframes ears {
-  0% {
-    background-image: url(/assets/img/logo_blink.png); }
-  30% {
-    background-image: url(/assets/img/logo.png); }
-  50% {
-    background-image: url(/assets/img/logo.png); }
-  60% {
-    background-image: url(/assets/img/logo_blink.png); }
-  70% {
-    background-image: url(/assets/img/logo.png); } }
-  header .foxy:active {
-    cursor: pointer;
-    background-image: url(/assets/img/logo_ears.png); }
+    -webkit-animation: ears 1.7s steps(7) infinite;
+    -moz-animation: ears 1.7s steps(7) infinite;
+    -ms-animation: ears 1.7s steps(7) infinite;
+    -o-animation: ears 1.7s steps(7) infinite;
+    animation: ears 1.7s steps(7) infinite; }
   header nav {
     padding-top: 10px;
     margin: 0px auto;
