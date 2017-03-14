@@ -429,17 +429,41 @@ header {
 
 @media only screen and (max-width: 519px) {
   .foxy {
-    width: 337.5px !important;
-    height: 235.5px !important; }
-    .foxy img {
-      width: 337.5px !important;
-      height: 235.5px !important; }
+    width: 315px !important;
+    height: 219.8px !important;
+    background-size: 2205px 219.8px !important; }
 
   h1 {
     font-size: 3em !important; }
 
   .line {
-    width: 250px !important; } }
+    width: 250px !important; }
+
+  @-webkit-keyframes ears {
+    from {
+      background-position: 0px; }
+    to {
+      background-position: -2205px; } }
+  @-moz-keyframes ears {
+    from {
+      background-position: 0px; }
+    to {
+      background-position: -2205px; } }
+  @-ms-keyframes ears {
+    from {
+      background-position: 0px; }
+    to {
+      background-position: -2205px; } }
+  @-o-keyframes ears {
+    from {
+      background-position: 0px; }
+    to {
+      background-position: -2205px; } }
+  @keyframes ears {
+    from {
+      background-position: 0px; }
+    to {
+      background-position: -2205px; } } }
 footer {
   background: #7A9E9F;
   padding: 30px;
