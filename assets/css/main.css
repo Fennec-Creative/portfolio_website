@@ -289,17 +289,6 @@ header {
     width: 325px;
     margin: 20px auto;
     border-bottom: 5px solid #656565; }
-@keyframes cute {
-  0% {
-    opacity: 1; }
-  30% {
-    opacity: 0; }
-  50% {
-    opacity: 0; }
-  60% {
-    opacity: 1; }
-  70% {
-    opacity: 0; } }
   header .foxy {
     cursor: pointer;
     background-image: url(/assets/img/sprites.png);
@@ -489,13 +478,23 @@ footer {
     cursor: pointer;
     margin: 30px; }
   footer svg:not(:hover) {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out; }
   footer svg:hover {
     cursor: pointer;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
     animation-iteration-count: 1;
     -moz-transform: rotate3d(-100px, 0px, 0px);
     -webkit-transform: rotate3d(-100px, 0px, 0px);
+    -ms-transform: rotate3d(-100px, 0px, 0px);
+    -o-transform: rotate3d(-100px, 0px, 0px);
     transform: rotateY(180deg); }
 
 @media only screen and (max-width: 463px) {
@@ -524,9 +523,13 @@ section {
     section .container .image.slide-left {
       -moz-transition: all 500ms ease-in-out;
       -webkit-transition: all 500ms ease-in-out;
+      -ms-transition: all 500ms ease-in-out;
+      -o-transtion: all 500ms ease-in-out;
       transition: all 500ms ease-in-out;
       -moz-transform: translate3d(-100px, 0px, 0px);
       -webkit-transform: translate3d(-100px, 0px, 0px);
+      -ms-transform: translate3d(-100px, 0px, 0px);
+      -o-transform: translate3d(-100px, 0px, 0px);
       transform: translate(-100px); }
     section .container .image.slide-left.show {
       background-image: url(/assets/img/photo_retouch.png);
@@ -542,15 +545,20 @@ section {
       -moz-transform: translate3d(0px, 0px, 0px);
       -webkit-transform: translate3d(0px, 0px, 0px);
       -ms-transform: translate(0px, 0px);
+      -o-transform: translate(0px, 0px);
       transform: translate3d(0px, 0px, 0px); }
     section .container .black {
       position: relative; }
     section .container .black.slide-up {
       -moz-transition: all 500ms ease-in-out;
       -webkit-transition: all 500ms ease-in-out;
+      -ms-transition: all 500ms ease-in-out;
+      -o-transition: all 500ms ease-in-out;
       transition: all 800ms ease-in-out;
       -moz-transform: translate3d(-100px, 0px, 0px);
       -webkit-transform: translate3d(-100px, 0px, 0px);
+      -ms-transform: translate3d(-100px, 0px, 0px);
+      -o-transform: translate3d(-100px, 0px, 0px);
       transform: translate(-500); }
     section .container .black.slide-up.show-black {
       background-image: url(/assets/img/about.png);
@@ -565,6 +573,7 @@ section {
       -moz-transform: translate3d(0px, 0px, 0px);
       -webkit-transform: translate3d(0px, 0px, 0px);
       -ms-transform: translate(0px, 0px);
+      -o-transform: translate(0px, 0px);
       transform: translate3d(0px, 0px, 0px); }
     section .container .about {
       position: absolute;
@@ -716,6 +725,10 @@ section {
     height: 340px; }
     .thumb-wrap #smallCircle img {
       opacity: 0;
+      -webkit-transition: all 200ms ease-in-out;
+      -moz-transition: all 200ms ease-in-out;
+      -ms-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
       transition: all 200ms ease-in-out; }
     .thumb-wrap #smallCircle img:hover {
       opacity: 1; }
@@ -726,6 +739,10 @@ section {
     height: 340px; }
     .thumb-wrap #smallCircle2 img {
       opacity: 0;
+      -webkit-transition: all 200ms ease-in-out;
+      -moz-transition: all 200ms ease-in-out;
+      -ms-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
       transition: all 200ms ease-in-out; }
     .thumb-wrap #smallCircle2 img:hover {
       opacity: 1; }
@@ -736,6 +753,10 @@ section {
     height: 426px; }
     .thumb-wrap #largeCircle img {
       opacity: 0;
+      -webkit-transition: all 200ms ease-in-out;
+      -moz-transition: all 200ms ease-in-out;
+      -ms-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
       transition: all 200ms ease-in-out; }
     .thumb-wrap #largeCircle img:hover {
       opacity: 1; }
@@ -770,6 +791,10 @@ section {
     position: absolute;
     margin: 20px;
     padding-top: 10px;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
     transition: all 500ms ease-in-out;
     animation: bounce-up 2s infinite; }
     @media (max-width: 740px) {
@@ -790,6 +815,10 @@ section {
     position: absolute;
     margin: 20px;
     padding-top: 10px;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
     transition: all 500ms ease-in-out;
     overflow: hidden;
     animation: bounce-down 2s infinite; }
@@ -851,6 +880,10 @@ section {
     background-size: contain; }
     #smallCircle img {
       opacity: 0;
+      -webkit-transition: all 200ms ease-in-out;
+      -moz-transition: all 200ms ease-in-out;
+      -ms-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
       transition: all 200ms ease-in-out;
       width: 300px !important;
       height: 255px !important; }
@@ -865,6 +898,10 @@ section {
     background-size: contain; }
     #smallCircle2 img {
       opacity: 0;
+      -webkit-transition: all 200ms ease-in-out;
+      -moz-transition: all 200ms ease-in-out;
+      -ms-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
       transition: all 200ms ease-in-out;
       width: 300px !important;
       height: 255px !important; }
@@ -879,6 +916,10 @@ section {
     background-size: contain; }
     #largeCircle img {
       opacity: 0;
+      -webkit-transition: all 200ms ease-in-out;
+      -moz-transition: all 200ms ease-in-out;
+      -ms-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
       transition: all 200ms ease-in-out;
       width: 375px !important;
       height: 319.5px !important; }
@@ -893,6 +934,10 @@ section {
     height: 204px !important; }
     #smallCircle img {
       opacity: 0;
+      -webkit-transition: all 200ms ease-in-out;
+      -moz-transition: all 200ms ease-in-out;
+      -ms-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
       transition: all 200ms ease-in-out;
       width: 240px !important;
       height: 204px !important; }
@@ -904,6 +949,10 @@ section {
     height: 204px !important; }
     #smallCircle2 img {
       opacity: 0;
+      -webkit-transition: all 200ms ease-in-out;
+      -moz-transition: all 200ms ease-in-out;
+      -ms-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
       transition: all 200ms ease-in-out;
       width: 240px !important;
       height: 204px !important; }
@@ -915,6 +964,10 @@ section {
     height: 255.6px !important; }
     #largeCircle img {
       opacity: 0;
+      -webkit-transition: all 200ms ease-in-out;
+      -moz-transition: all 200ms ease-in-out;
+      -ms-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
       transition: all 200ms ease-in-out;
       width: 300px !important;
       height: 255.6px !important; }
@@ -947,6 +1000,9 @@ section {
     background: transparent;
     outline: none;
     -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s; }
   .contact input:focus {
     background: #fff; }
@@ -958,6 +1014,9 @@ section {
     background: transparent;
     outline: none;
     -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s; }
   .contact textarea:focus {
     background: #fff; }
@@ -1010,6 +1069,10 @@ section {
     background: linear-gradient(to right, white 50%, #FE5F55 50%);
     background-size: 200% 100%;
     background-position: right bottom;
+    -webkit-transition: all 0.5s ease;
+    -moz-ransition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease; }
   .contact .btn-submit:hover {
     background-position: left bottom;
