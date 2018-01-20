@@ -4,7 +4,20 @@ $('.image').removeClass("show");
 $( document ).ready(function() {
   workBelt();
   workload();
+  acusites();
 });
+
+function acusites(){
+	$('.project_1').click(function(e){
+		e.preventDefault();
+		$('.web_projects').hide();
+		$('.project_1_drop').slideDown(700);
+	});
+
+	$('.return-to-top').click(function(){
+		$('.web_projects').hide(350);
+	});
+}
 
 function workBelt() {
 	$('.thumb-unit').click(function() {
