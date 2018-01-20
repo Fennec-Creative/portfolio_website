@@ -8,6 +8,9 @@ $( document ).ready(function() {
 });
 
 function acusites(){
+
+	$('.web_projects').hide(350);
+
 	$('.project_1').click(function(e){
 		e.preventDefault();
 		$('.web_projects').hide();
