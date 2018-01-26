@@ -15,10 +15,12 @@ function acusites(){
 		e.preventDefault();
 		$('.web_projects').hide();
 		$('.project_1_drop').slideDown(700);
+		$(document).scrollTo('#header_div');
 	});
 
 	$('.return-to-top').click(function(){
 		$('.web_projects').hide(350);
+		$(document).scrollTo('#top_div');
 	});
 }
 
