@@ -28,14 +28,24 @@
 
 		.close_x {
 			display:block;
-			position:absolute;
+			position:relative;
 			height:40px;
 			width:40px;
-			border-radius:5px;
-			background-color:#fff;
-			color:#000;
-			top:30px;
-			right:30px;
+			border-radius:50%;
+			background-color:#FE5F55;
+			color:#ffffff;
+			float:right;
+			font-weight:bold;
+			font-family:cursive;
+			font-size:24px;
+			top:40px;
+			right:40px;
+			cursor:pointer;
+		}
+
+		.close_x:hover {
+			color:#fff;
+			background-color:#FE5F55;
 		}
 
 		.acuFont h1 {
@@ -62,6 +72,7 @@
 			color:#656565;
 			font-weight:bold;
 			font-size:2em;
+			cursor:pointer;
 		}
 
 		.site_project_box h2:hover {
@@ -97,7 +108,6 @@
 
 		#acuHeader {
 			padding-top: 20px;
-			background-color:#ffffff;
 		}
 
 		#acuHome {
@@ -239,19 +249,21 @@
 	</div>
 
 	<div class="site_third">
-		
+		<a href="content_top">
 		<div class="site_project_box project_1">
 		<div class="site_projct_image">
 			<img src="/assets/img/work/acusites/acu_mini.jpg" alt="acusites.com" />
 		</div>
 		AcuSites
-		</div>
+		</div></a>
 	</div>
 
 <!--=== Start Projects ===-->
+<a name="content_top"></a>
+<a name="to-top-two"></a>
 <div class="web_projects project_1_drop">
 <div class="return-to-top close_x">X</div>
-	<div id="acuHeader">
+	<div id="acuHeader" style="background-color:#ffffff;">
 		<h1 class="acuFont">AcuSites</h1>
 		<h3>Web Design and Development</h3>
 	</div>
@@ -312,7 +324,7 @@
 		</div>
 	</div>
 	<div class="arrow-container">
-	<div class="work-up"><a href="#to-top"><i class="fa fa-arrow-left" id="arrow-up"></i><p>TO TOP</p></a></div>
+	<div class="work-up"><a href="#to-top-two"><i class="fa fa-arrow-left" id="arrow-up"></i><p>TO TOP</p></a></div>
 
 	
 </div>
