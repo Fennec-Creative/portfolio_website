@@ -1044,7 +1044,7 @@ section {
     text-align: left;
     padding: 30px; }
     .contact .make-center textarea {
-      width: 90%; }
+      width: 96%; }
   .contact .submit-button {
     float: right;
     margin-right: 10%; }
@@ -1099,4 +1099,11 @@ section {
     margin-left: 5% !important; }
 
   .submit-button {
-    margin-right: 6% !important; } }
+    margin-right: 6% !important; } 
+
+  .contact .make-center textarea {
+    width:90%;
+  }
+
+
+  }
