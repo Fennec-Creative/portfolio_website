@@ -167,6 +167,7 @@
 		background-color: #FE5F55;
 		border: 2px;
 		border-radius: 5px;
+		width: auto !important;
 
 	
 		background: -webkit-linear-gradient(left, white 50%, #FE5F55 50%);
@@ -241,9 +242,7 @@
 		margin: 0 auto;
     	}
 
-    .hvrButton {
-    	width: auto !important;
-    }
+
 
     .modelpic {
 		float: none;
@@ -292,15 +291,7 @@
 }
 
 	</style>
-	<script async>
-		$(document).ready(function(){
-	$(".hvrButton").click(function(){
-		$(".modelpic").toggleClass("mTwo");
-		$(".ringspic").toggleClass("rTwo");
-	}
-	)
-});
-	</script>
+<script src="/assets/js/functions.js" type="text/javascript"></script>
 </head>
 <body>
 
@@ -384,7 +375,7 @@
 	</p>
 
 	<div class="hover-button">
-			<input class="hvrButton" type="button" value="Before/After" />
+			<input class="hvrButton hvrButton1" type="button" value="Before/After" />
 	</div>
 </div>
 </div>
@@ -403,7 +394,7 @@
 	<b>Purpose:</b> Industrial product retouching with an emphasis on color enhancement, highlight correction, and element containment  
 	</p>
 	<div class="hover-button">
-			<input class="hvrButton" type="button" value="Before/After" />
+			<input class="hvrButton hvrButton2" type="button" value="Before/After" />
 	</div>
 </div>
 </div>

@@ -1,4 +1,16 @@
 <head>
+
+
+<script type="text/javascript" src="/work/sbs-carousel/owl/owl.carousel.min.js"></script>
+
+<link rel='stylesheet' id='owl-styles-css'  href='/work/sbs-carousel/owl/assets/owl.carousel.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-theme-css'  href='/work/sbs-carousel/owl/assets/owl.theme.default.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-sbs-css'  href='/work/sbs-carousel/styles.css' type='text/css' media='all' />
+
+<script type='text/javascript' src='/work/sbs-carousel/load-carousel.js'></script>
+
+
+	
 	<style type="text/css">
 
 		body {
@@ -11,7 +23,7 @@
 
 		h2 {
 			font-family: "Source Sans Pro", sans-serif;
-    		font-size: 2em;
+    		font-size: 2rem;
 		}
 
 		a{
@@ -38,8 +50,8 @@
 			font-weight:bold;
 			font-family:cursive;
 			font-size:24px;
-			top:40px;
-			right:30px;
+			top:30px;
+			right:0px;
 			cursor:pointer;
 			border:1px solid #FE5F55;
 		}
@@ -49,19 +61,21 @@
 			background-color:#fff;
 		}
 
-		.acuFont h1 {
+		.acuFont {
 		color:#656565 !important;
+		font-family: "Source Sans Pro", sans-serif !important;
+		font-weight:300;
 		}
 
 		.site_projct_image img {
-			border:5px solid #656565;
+			border:4px solid #656565;
 			border-radius:5px;
-			transition: all 1.5s;
+			transition: all .5s;
 		}
 
 		.site_projct_image img:hover {
 			border-radius:50%;
-			border:5px solid #467089;
+			border:4px solid #467089;
 		}
 
 		.site_project_box:hover {
@@ -69,7 +83,7 @@
 		}
 
 		.site_project_box {
-			margin: 40px 20px;
+			margin: 10px;
 			color:#656565;
 			font-weight:bold;
 			font-size:2em;
@@ -88,12 +102,92 @@
 		.site_third {
 			width:33%;
 			display:inline-block;
+			vertical-align:top;
+		}
+
+		.site_third h3 {
+			margin-top:0px !important;
+		}
+
+		.set_width_1 {
+			display:block;
+			width:80%;
+			max-width:1400px;
+			margin:0 auto;
+		}
+
+		.view_site_button, .view_site_button:visited, .view_site_button:focus {
+			background-color:#fff;
+			border-radius:5px;
+			color:#656565;
+			border:1px solid #656565;
+			font-size:16px;
+			padding:5px 10px;
+			line-height:2.8;
+		}
+
+		.view_site_button:hover {
+			background-color:#656565;
+			color:#fff;
 		}
 
 		.acuImg {
+			position:relative;
 			margin: 0 auto;
 			display:inline-block;
-			padding: 0 30px;
+			width:800px;
+			height:658px;
+			background-image:url('/assets/img/work/acusites/monitor.png');
+			background-position:top center;
+			background-repeat:no-repeat;
+			background-size:cover;
+			margin-bottom:40px;
+		}
+
+		.acu_image_container::-webkit-scrollbar-track
+		{
+			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+			background-color: #F5F5F5;
+		}
+
+		.acu_image_container::-webkit-scrollbar
+		{
+			width: 12px;
+			background-color: #F5F5F5;
+		}
+
+		.acu_image_container::-webkit-scrollbar-thumb
+		{
+			height:10px;
+			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+			background-color: #888;
+		}
+
+		.acu_image_container {
+			display:block;
+			position:absolute;
+			width:748px;
+			height:470px;
+			overflow-y:scroll;
+			top:28px;
+			left:26px;
+		}
+
+		.acuSection{
+		overflow: hidden !important;
+		padding: 50px 0;
+	}
+
+	.acuSection p {
+			font-size:1.5em;
+		}
+
+		.acuPara {
+			width:100%;
+			max-width:800px;
+			margin:0 auto;
+			display:block;
+			text-align:center;
 		}
 
 		.acuPara p {
@@ -107,133 +201,138 @@
 		font-family: 'Source Sans Pro', sans-serif;
 		}
 
-		#acuHeader {
-			padding-top: 20px;
+		.acuHeader {
+			padding: 20px 40px;
 		}
 
-		#acuHome {
-			background-color: #ffffff;
-			padding-top: 20px;
-			overflow: hidden;
-		}
 
-		#acuEx {
-			background-color: #f0f0f0;
-			padding-top: 40px;
-			overflow: hidden;
-		}
-
-		#acuEx h2 {
-			color:#a6a6a6;
-		}
-
-		#acuLogo {
-			background-color: #e0e0e0;
-			padding-top: 40px;
-			overflow: hidden;
-		}
-
-		#acuLogo h2 {
-			color:#8e8e8e;
-		}
-
-		#acuDesigns {
-			background-color: #cecece;
-			padding-top: 40px;
-			overflow: hidden;
-		}
-
-		#acuDesigns h2 {
-			color:#666666;
-		}
-
-		#acuTuts {
-			background-color: #b5b5b5;
-			padding-top: 40px;
-			overflow: hidden;
-
-		}
-
-		#acuTuts h2{
-			color:#373737;
-			padding-bottom: 40px;
-		}
-
-		#acugraphA{
-			color: #000;
-			width: 948px;
-			border: 5px solid #f0f0f0;
-			padding: 20px;
-			text-align: center;
-			margin: 0px auto;
-			margin-bottom:30px;
-		}
-
-		#acugraphB{
-			color: #000;
-			width: 550px;
-			float: right;
-			margin: 10%;
-			border: 5px solid #e0e0e0;
-			padding: 20px;
-		}
-
-		#acugraphC {
-			color: #000;
-			width: 550px;
-			float: left;
-			margin: 10%;
-			border: 5px solid #cecece;
-			padding: 20px;
-		}
-
-		#acugraphD {
-			color: #000;
-			width: 948px;
-			border: 5px solid #b5b5b5;F
-			padding: 20px;
-			text-align: center;
-			margin: 0px auto;
-			margin-bottom:30px;
-		}
-
-		#acugraphE {
-			color: #000;
-			width: 550px;
-			float: right;
-			margin: 10%;
-			border: 5px solid #a0a0a0;
-			padding: 20px;
-		}
-
-		#acuHeader h3 {
+		.acuHeader h3 {
 			margin: 0px;
 		}
 
-		.arrow-container {
-			height: 75px;
+
+		.rule_1 {
+			display:block;
+			width:80%;
+			max-width:100px;
+			border-top:1px solid #ccc;
+			margin: 0 auto;
 		}
-@media only screen and (max-width: 1545px) {
-	#acugraphA, #acugraphB, #acugraphC, #acugraphD, #acugraphE{
-		width: 80% !important;
-		float: none;
+
+		.before_after {
 		display: block;
 		margin: 0 auto;
+		margin-bottom:40px;
+		background-size: contain;
+		background-repeat:no-repeat;
+		width:100%; 
 	}
 
-
-	#acuHome, #acuEx, #acuLogo, #acuDesigns, #acuTuts {
-		padding-top: 5%;
-		padding-bottom: 5%;
-		overflow: hidden !important;
+	.bf_rfc {
+		background-image: url("/assets/img/work/acusites/porter-before.jpg");
+		max-width:867px;
+		min-height:400px;
 	}
-}
+
+	.bf_rfc_after {
+		background-image: url("/assets/img/work/acusites/porter-after.jpg");
+	}
+
+	.before_after_container {
+		text-align:left;
+	}
+
+	.wk-hvrButton {
+		box-sizing: border-box;
+		position: relative;
+		overflow: hidden;
+
+		font-size: 2em;
+		font-family: 'Berkshire Swash', cursive;
+		font-weight: bold;
+		padding: 5px 20px;
+		display: inline-block;
+		margin-top: 0px;
+		margin-right: 30px;
+		color: white;
+		background-color: #FE5F55;
+		border: 2px;
+		border-radius: 5px;
+		width: auto !important;
+
+	
+		background: -webkit-linear-gradient(left, white 50%, #FE5F55 50%);
+		background: -moz-linear-gradient(left, white 50%, #FE5F55 50%);
+		background: -o-linear-gradient(left, white 50%, #FE5F55 50%);
+		background: linear-gradient(to right, white 50%, #FE5F55 50%);
+  
+		background-size: 200% 100%;
+		background-position: right bottom;
+		transition: all 0.5s ease;
+	}
+
+	.wk-hvrButton:hover {
+		background-position: left bottom;
+		color: #FE5F55;
+	}
+
+	.wi-hvrButton:active {
+		background-color: white;
+	}
+
+	.wk-button-container {
+		text-align:left;
+	}
+
+	.background-image {
+		background-size:cover;
+	}
+
+	.background_project1 {
+		background-image:url('/assets/img/work/acusites/rfchild-background.jpg');
+	}
+
+	.background_project3 {
+		background-image:url('/assets/img/work/acusites/pdvchild-background.jpg');
+	}
+
+	.background_project4 {
+		background-image:url('/assets/img/work/acusites/acusites-background.jpg');
+	}
+
+	.background_project5 {
+		background-image:url('/assets/img/work/acusites/pdv-background.jpg');
+	}
+
+	.background_project7 {
+		background-image:url('/assets/img/work/acusites/eti-background.jpg');
+	}
+
+	.background_project8 {
+		background-image:url('/assets/img/work/acusites/stellar-background.jpg');
+	}
+
+	.background_project9 {
+		background-image:url('/assets/img/work/acusites/msa-background.jpg');
+	}
+
+	#porter_button {
+		font-family: "Source Sans Pro", sans-serif;
+	}
+
 
 @media only screen and (max-width: 1100px) {
 
 .acuImg {
-		padding-top: 5%;
-		padding-bottom: 5%;
+		width: 700px;
+        height: 575.75px;
+	}
+
+.acu_image_container {
+		width:655px;
+   		height:410px;
+   		top:25px;
+   		left:25px;
 	}
 
 .acuFont{
@@ -243,98 +342,837 @@
 
 }
 
-@media only screen and (max-width: 900px) {
-.site_third
+@media only screen and (max-width: 990px) {
+.site_third {
+	width:49%;
+}
+}
+
+@media only screen and (max-width: 870px) {
+.acuImg {
+   width: 550px;
+   height: 452.375px;
+}
+
+.acu_image_container {
+   width:512px;
+   height:321px;
+   top:20px;
+   left:19px;
+}
+}
+
+@media only screen and (max-width: 740px) {
+.site_third {
+	width:100%;
+}
+
+.col_2 {
+	width:100%;
+}
+}
+
+@media screen and (max-width: 665px) {
+.acuImg {
+   width: 360px;
+   height: 296.1px;
+}
+
+.acu_image_container {
+    width: 334px;
+    height: 210px;
+    top: 13px;
+    left: 13px;
+}
+}
+
+@media screen and (max-width: 420px) {
+.acuImg {
+   width: 260px;
+   height: 213.18px;
+}
+
+.acu_image_container {
+    width: 243px;
+    height: 151px;
+    top: 10px;
+    left: 8px;
+}
 }
 
 		
 	</style>
+
+
+<script src="/assets/js/functions.js" type="text/javascript"></script>
+<script src="https://use.fontawesome.com/73d2e67268.js"></script>
 </head>
 <body>
-	<div id="acuHeader"><a name="to-top-two"></a>
-		<h1 class="acuFont" id="top_div">Featured</h1>
-		<h3>Examples of Recent Work</h3>
+
+	<div class="acuHeader"><a name="to-top-two"></a>
+		<h1 id="top_div" style="color:#656565;">Featured</h1>
+		<h2>Examples of Recent Work</h2>
 	</div>
 
+<!--==== START NAV ====-->
+<div class="set_width_1" style="margin-bottom:40px;">
+<!--Nav 1: Realities for Children-->
 	<div class="site_third">
-		<div class="site_project_box project_1">
+		<div class="site_project_box project" id="1">
 		<div class="site_projct_image">
-			<img src="/assets/img/work/acusites/acu_mini.jpg" alt="acusites.com" />
+			<img src="/assets/img/work/acusites/realities-cover.jpg" alt="Realities for Children" />
 		</div>
-		AcuSites
-		</div>
-	</div>
-
-<!--=== Start Projects ===-->
-<div class="web_projects project_1_drop">
-<div class="return-to-top close_x">X</div>
-	<div id="acuHeader" style="background-color:#ffffff;">
-		<h1 class="acuFont" id="header_div">AcuSites</h1><a name="content_top"></a>
-		<h3>Web Design and Development</h3>
-	</div>
-
-	<div id="acuHome">
-		<img class="acuImg" src="/assets/img/work/acusites/homepage.jpg" alt="acusites.com">
-
-		<div class="acuPara" id="acugraphA">
-			<p>
-				<b>Client:</b> AcuSites
-			<p>
-				<b>Role:</b> Web Design, Front-end Development, Logo Design, Content Creation, Support
-			</p>
-			<p>
-				<b>Site Address:</b> <a target="_blank" href="http://www.acusites.com">www.acusites.com</a>
-			</p>
-		</div>
-
-	</div>
-
-	<div class="acuPara" id="acuEx">
-	<h2>Responsive Modern Designs</h2>
-		<img class="acuImg" src="/assets/img/work/acusites/examplespng.png" alt="Acusites Examples">
-		<div id="acugraphB">
-			<p>
-				The purpose of AcuSites is to create designer websites that are modern and able to stand the test of time.  Every aspect of the project was therefore crafted to look good on all devices, regardless of screen-size.  
-			</p>
 		</div>
 	</div>
 
-	<div id="acuLogo">
-	<h2>Characterized Logo to Enhance Branding</h2>
-		<img class="acuImg" src="/assets/img/work/acusites/comic 2.png" alt="Acusites Logo">
-		<div class="acuPara" id="acugraphC">
-			<p>
-				“Pointsy” the AcuSites mascot was created to enhance branding and user experience.  While maintaining a simple design that encompasses the Acupuncture field, Pointsy has human characteristics that are easily manipulated to form multiple gestures and expressions. 
-			</p>
+<!--Nav 2: DispatchPlus Animations-->
+	<div class="site_third">
+		<div class="site_project_box project" id="2">
+		<div class="site_projct_image">
+			<img src="/assets/img/work/acusites/animations-cover.jpg" alt="DispatchPlus"acusites.com"" />
+		</div>
 		</div>
 	</div>
 
-	<div id="acuDesigns">
-	<h2>20 Pre-built Templates</h2>
-		<img class="acuImg" src="/assets/img/work/acusites/designspng.png" alt="Acusites Designs">
-		<div class="acuPara" id="acugraphD" style="padding:20px;">
-			<p>
-				With the launch of the website, <a target="_blank" href="http://www.acusites.com/design/">20 pre-built templates</a> were created with original artwork, icons, and imagery.  Four interactive sample pages were also made available to showcase available layouts and animations.
-			</p>
+<!--Nav 3: TeamConnect-->
+	<div class="site_third">
+		<div class="site_project_box project" id="3">
+		<div class="site_projct_image">
+			<img src="/assets/img/work/acusites/pdv-cover.jpg" alt="TeamConnect Thumb" />
+		</div>
 		</div>
 	</div>
 
-	<div id="acuTuts">
-	<h2>Detailed Tutorial Section</h2>
-		<img class="acuImg" src="/assets/img/work/acusites/tutorialspng.png" alt="Acusites Tutorials">
-		<div class="acuPara" id="acugraphE">
-			<p>
-				<a target="_blank" href="http://www.acusites.com/tutorials/">18 detailed tutorials</a> were written and included with the launch of the website to walk customers through the basics of updating and maintaining their website.  Each tutorial includes step-by-step instructions with useful images and references.
-			</p>
+<!--Nav 4: Acusites-->
+	<div class="site_third">
+		<div class="site_project_box project" id="4">
+		<div class="site_projct_image">
+			<img src="/assets/img/work/acusites/acu_mini.jpg" alt="Acusites Thumb" />
+		</div>
 		</div>
 	</div>
+
+<!--Nav 5: ConnectMeVoice-->
+	<div class="site_third">
+		<div class="site_project_box project" id="5">
+		<div class="site_projct_image">
+			<img src="/assets/img/work/acusites/cmv-cover.jpg" alt="ConnectMeVoice Thumb" />
+		</div>
+		</div>
+	</div>
+
+<!--Nav 6: Bob Porter-->
+	<div class="site_third">
+		<div class="site_project_box project" id="6">
+		<div class="site_projct_image">
+			<img src="/assets/img/work/acusites/porter-cover1.jpg" alt="Bob Porter Thumb" />
+		</div>
+		</div>
+	</div>
+
+<!--Nav 7: Emerging Technologies-->
+	<div class="site_third">
+		<div class="site_project_box project" id="7">
+		<div class="site_projct_image">
+			<img src="/assets/img/work/acusites/eti-cover.jpg" alt="Emerging Technologies Thumb" />
+		</div>
+		</div>
+	</div>
+
+<!--Nav 8: Stellar Insight-->
+	<div class="site_third">
+		<div class="site_project_box project" id="8">
+		<div class="site_projct_image">
+			<img src="/assets/img/work/acusites/stellar-cover.jpg" alt="Stellar Insight Thumb" />
+		</div>
+		</div>
+	</div>
+
+<!--Nav 9: Microsoft Access Professionals-->
+	<div class="site_third">
+		<div class="site_project_box project" id="9">
+		<div class="site_projct_image">
+			<img src="/assets/img/work/acusites/micro-cover.jpg" alt="Microsoft Access Professionals Thumb" />
+		</div>
+		</div>
+	</div> 
+
+	
+<!--==== END NAV ====-->
+</div><div id="projects_top"></div>
+<!--==== START PROJECTS ====-->
+<!-- Project 1: Realities for Children -->
+<div class="web_projects projectdrop_1"><div class="background-image background_project1">
+<div class="set_width_1"><div class="return-to-top close_x">X</div></div>
+	<div class="acuHeader">
+		<h1 class="acuFont">Realities for Children</h1><a name="content_top"></a>
+		<div class="rule_1"></div>
+		<h2 style="color:#aa001c; font-weight:200;">Web Design</h2>
+    </div>
+    <!-- Introduction -->
+	<div class="acuSection" style="padding-top:0px;">
+		<div class="set_width_1">
+		<div class="acuImg">
+			<div class="acu_image_container">
+		<img src="/assets/img/work/acusites/realities-full.jpg" alt="Homepage">
+			</div>
+		</div>
+		<div class="acuPara">
+			<p style="color:#fff;">Realities for Children is a nonprofit organization that helps protect and support children who have been abused, neglected, or are at-risk.  The purpose of this project was to give the organization a personable online presence while providing useful information, attracting donors and volunteers, and crediting sponsors.  </p>
+		</div>
+	</div>
+	</div></div>
+    <!-- Main Description -->
+	<div class="acuSection" style="background-color:#fff;">
+		<div class="set_width_1">
+		<div class="col_2">
+			<h2 style="font-weight:300; font-weight:bold;">Project Details</h2>
+			<p><strong>Client:</strong> Realities for Children<br />
+				<strong>Contractor:</strong> Wickam Group<br />
+				<strong>Involvement:</strong> Web Design, Logo Design<br />
+				<a class="view_site_button" href="www.realitiesforchildren.com" target="_blank">View Site</a>
+			</p></div>
+
+		<div class="col_2"><img src="/assets/img/work/acusites/rfc_phone.png" alt="Phone"/></div>
+	</div> </div>
+
+	<!-- One Paragraph -->
+	<div class="acuSection" style="background-color:#595959">
+		<div class="set_width_1">
+		<div class="acuPara">
+			<p style="color:#fff;">My primary role in this project was web design.  I also created an alternative version of the Realities for Children logo for the site header and assisted in building out various pages.  </p>
+		</div>
+	</div>
+	</div>
+
+	
 	<div class="arrow-container">
 	<div class="work-up"><a href="#to-top-two"><i class="fa fa-arrow-left" id="arrow-up"></i><p>TO TOP</p></a></div>
-
+</div>
 	
 </div>
 
-<script src="/assets/js/jquery-2.1.1.min.js"></script>
-<script src="/assets/js/functions.js" type="text/javascript"></script>
-<script src="https://use.fontawesome.com/73d2e67268.js"></script>
+</div>
+
+<!-- Project 2: DispatchPlus Animations -->
+<div class="web_projects projectdrop_2">
+<div class="set_width_1"><div class="return-to-top close_x">X</div></div>
+	<div class="acuHeader" style="background-color:#fff;">
+		<h1 class="acuFont">DispatchPlus Interactive Demos</h1><a name="content_top"></a>
+		<div class="rule_1"></div>
+		<h2 style="color:#F07216; font-weight:200;">Design | Animation | Development</h2>
+    </div>
+    <!-- Introduction -->
+	<div class="acuSection" style="background-color:#fff; padding-top:0px;">
+		<div class="set_width_1">
+		<div class="own_carousel_container" style="background-color:#fff;">
+			
+
+
+			<!-- START THE CAROUSEL -->
+                <section class="sbs" style="background:none;">
+                    <div class="sbs__row">
+                        <div class="sbs__left sbs__column">
+                            <div class="sbs__medium-6 sbs__column">
+                                <div class="tab-0 sbs__hide-for-small-only pagination">
+                                    <div class="sbs__item-wrapper" id="top_wrap">
+                                        <div class="sbs__item">
+                                            <div class="col grid_2_of_12"><img src="/assets/img/work/acusites/icon-1c.png"></div>
+                                            <div class="col grid_10_of_12">
+                                                <div class="sbs__tab-title">
+                                                    Instantly Reach Your Team
+                                                </div>
+                                                <p class="sbs__tab-description sbs__hide-for-small-only">Easily connect with a touch of a button.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-1 sbs__hide-for-small-only pagination">
+                                    <div class="sbs__item-wrapper">
+                                        <div class="sbs__item">
+                                            <div class="col grid_2_of_12"><img src="/assets/img/work/acusites/icon-2c.png"></div>
+                                            <div class="col grid_10_of_12">
+                                                <div class="sbs__tab-title">
+                                                    Gain Visibility to Worker Location
+                                                </div>
+                                                <p class="sbs__tab-description sbs__hide-for-small-only">Document where your team has been.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-2 sbs__hide-for-small-only pagination">
+                                    <div class="sbs__item-wrapper">
+                                        <div class="sbs__item">
+                                            <div class="col grid_2_of_12"><img src="/assets/img/work/acusites/icon-3c.png"></div>
+                                            <div class="col grid_10_of_12">
+                                                <div class="sbs__tab-title">
+                                                    Maximize Team Productivity
+                                                </div>
+                                                <p class="sbs__tab-description sbs__hide-for-small-only">Remedy last minute job needs.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbs__medium-6 sbs__column">
+                                <div class="tab-3 sbs__hide-for-small-only pagination">
+                                    <div class="sbs__item-wrapper">
+                                        <div class="sbs__item">
+                                            <div class="col grid_2_of_12"><img src="/assets/img/work/acusites/icon-4c.png"></div>
+                                            <div class="col grid_10_of_12">
+                                                <div class="sbs__tab-title">
+                                                    Reduce Unnecessary Calls
+                                                </div>
+                                                <p class="sbs__tab-description sbs__hide-for-small-only">Automate messages and see alerts.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-4 sbs__hide-for-small-only pagination">
+                                    <div class="sbs__item-wrapper">
+                                        <div class="sbs__item">
+                                            <div class="col grid_2_of_12"><img src="/assets/img/work/acusites/icon-5c.png"></div>
+                                            <div class="col grid_10_of_12">
+                                                <div class="sbs__tab-title">
+                                                    Easily Verify Employees’ Hours
+                                                </div>
+                                                <p class="sbs__tab-description sbs__hide-for-small-only">Automate clock in/out instantly.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-5 sbs__hide-for-small-only pagination">
+                                    <div class="sbs__item-wrapper">
+                                        <div class="sbs__item">
+                                            <div class="col grid_2_of_12"><img src="/assets/img/work/acusites/icon-6c.png"></div>
+                                            <div class="col grid_10_of_12">
+                                                <div class="sbs__tab-title">
+                                                    Monitor Worker Behavior
+                                                </div>
+                                                <p class="sbs__tab-description sbs__hide-for-small-only">Respond to driver inactivity instantly.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sbs__right sbs__column">
+                            <div class="owl-carousel carousel-primary">
+                                <div class="item-0"><img data-src="/work/sbs-carousel/slides/Demo_1.gif" src="/work/sbs-carousel/slides/Demo_1.gif"></div>
+                                <div class="item-1"><img data-src="/work/sbs-carousel/slides/Demo_2.gif" src="/work/sbs-carousel/slides/Demo_2.gif"></div>
+                                <div class="item-2"><img data-src="/work/sbs-carousel/slides/Demo_3.gif" src="/work/sbs-carousel/slides/Demo_3.gif"></div>
+                                <div class="item-3"><img data-src="/work/sbs-carousel/slides/Demo_4.gif" src="/work/sbs-carousel/slides/Demo_4.gif"></div>
+                                <div class="item-4"><img data-src="/work/sbs-carousel/slides/Demo_5.gif" src="/work/sbs-carousel/slides/Demo_5.gif"></div>
+                                <div class="item-5"><img data-src="/work/sbs-carousel/slides/Demo_6.gif" src="/work/sbs-carousel/slides/Demo_6.gif"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- END THE CAROUSEL -->
+
+
+
+		</div>
+	</div>
+	</div>
+
+	<!-- One Paragraph -->
+	<div class="acuSection" style="background-color:#f26322">
+		<div class="set_width_1">
+		<div class="acuPara">
+			<p style="color:#fff;">DispatchPlus is a workforce management system for mobile workers.  In order to illustrate the many useful features of DispatchPlus, I created a series of interactive demos using animated gifs and jQuery.</p>
+		</div>
+	</div>
+
+</div>
+    <!-- Main Description -->
+	<div class="acuSection" style="background-color:#fafafa;">
+		<div class="set_width_1">
+		<div class="col_2">
+			<h2>Project Details</h2>
+			<p><strong>Client:</strong> PDV Wireless<br />
+				<strong>Contractor:</strong> EmoryDay<br />
+				<strong>Involvement:</strong>Layout Design, Animation, Photo Retouching, Interactive Development<br />
+				<a class="view_site_button" href="https://www.pdvwireless.com/teamconnect/#demos" target="_blank">View Site</a>
+			</p></div>
+		<div class="col_2"><img src="/assets/img/work/acusites/notebook-1361981_1920.png" alt="Phone"/></div>
+	</div> </div>
+	
+
+	<!-- One Paragraph -->
+	<div class="acuSection" style="background-color:#fff">
+		<div class="set_width_1">
+		<div class="acuPara">
+			<p>I was responsible for taking this project from initial concept design to completion.  I created a series of animated gifs with Adobe Animate and combined them into a seamless user interface using Owl.js.  The end product was used across various advertising platforms for the following year as well as featured on the company's homepage. </p>
+		</div>
+	</div>
+	</div>
+
+	
+	<div class="arrow-container">
+	<div class="work-up"><a href="#to-top-two"><i class="fa fa-arrow-left" id="arrow-up"></i><p>TO TOP</p></a></div>
+</div>
+	
+</div>
+
+</div>
+
+<!-- Project 3: TeamConnect -->
+<div class="web_projects projectdrop_3"><div class="background-image background_project3">
+<div class="set_width_1"><div class="return-to-top close_x">X</div></div>
+	<div class="acuHeader" style="background-color:#fff;">
+		<h1 class="acuFont">TeamConnect</h1><a name="content_top"></a>
+		<div class="rule_1"></div>
+		<h2 style="color:#f26322; font-weight:400;">Web Development | Collaborative Design</h2>
+    </div>
+    <!-- Introduction -->
+	<div class="acuSection" style="padding-top:0px;">
+		<div class="set_width_1">
+		<div class="acuImg">
+			<div class="acu_image_container">
+		<img src="/assets/img/work/acusites/TeamConnect-full.jpg" alt="Homepage">
+			</div>
+		</div>
+		<div class="acuPara">
+			<p style="color:#fff;">PDVWireless is a private wireless communications carrier that specializes in workforce management solutions and push-to-talk applications.  I was a part of a company re-branding project, through which their website was redesigned and most of their content either updated or replaced. </p>
+		</div>
+	</div>
+	</div></div>
+    <!-- Main Description -->
+	<div class="acuSection" style="background-color:#fff;">
+		<div class="set_width_1">
+		<div class="col_2"><img src="/assets/img/work/acusites/pdv_phone.jpg" alt="Phone"/></div>
+		<div class="col_2">
+			<h2>Project Details</h2>
+			<p><strong>Client:</strong> PDVWireless<br />
+				<strong>Contractor:</strong> EmoryDay<br />
+				<strong>Involvement:</strong> Web Development, Collaborative Design, Photomanipulation, Website Maintenance<br />
+				<a class="view_site_button" href="https://www.pdvwireless.com/teamconnect/" target="_blank">View Site</a>
+			</p>
+			</div>
+	</div> </div>
+
+	<!-- One Paragraph -->
+	<div class="acuSection" style="background-color:#f26322">
+		<div class="set_width_1">
+		<div class="acuPara">
+			<p style="color:#fff;">The TeamConnect website was designed in collaboration with PDVWireless's design team.  I was responsible for full development of the website as well as some web design and digital graphic creation.</p>
+		</div>
+	</div>
+	</div>
+
+
+
+	<!-- Sub Section 1 -->
+	<div class="acuSection" style="background-color:#fff;">
+		<div class="set_width_1">
+		
+		<div class="col_2"><img src="/assets/img/work/acusites/pdv_library.jpg" alt="Phone"/></div>
+		<div class="col_2">
+			<h2>A New Kind of Library</h2>
+			<p>To better manage the large amount of content available in PDVWireless's Resources page, I created a custom application using jQuery and integrated it into the site layout, turning what was aesthetically unpleasing and cumbersome into an attractive and convenient sub-menu functionality while avoiding the burden of unnecessary Wordpress plugins.</p></div>
+	</div> </div>
+
+
+	
+	
+	
+	<div class="arrow-container">
+	<div class="work-up"><a href="#to-top-two"><i class="fa fa-arrow-left" id="arrow-up"></i><p>TO TOP</p></a></div>
+</div>
+	
+</div>
+
+</div>
+
+<!-- Project 4: Acusites -->
+<div class="web_projects projectdrop_4"><div class="background-image background_project4">
+<div class="set_width_1"><div class="return-to-top close_x">X</div></div>
+	<div class="acuHeader" >
+		<h1 class="acuFont">AcuSites</h1><a name="content_top"></a>
+		<div class="rule_1"></div>
+		<h2 style="color:#384d70; font-weight:400;">Web Design | Web Development | Logo Design</h2>
+    </div>
+    <!-- Introduction -->
+	<div class="acuSection" style=" padding-top:0px;">
+		<div class="set_width_1">
+		<div class="acuImg">
+			<div class="acu_image_container">
+		<img src="/assets/img/work/acusites/homepage.jpg" alt="Homepage">
+			</div>
+		</div>
+		<div class="acuPara">
+			<p style="color:#fff;">
+			AcuSites is an Out of the Box Web Design company that creates niche websites for Acupuncturists and Herbalists.  The purpose of this project was to create a clean and intuitive website with 20 stylistic ready-to-launch themes.</p>
+		</div>
+	</div>
+	</div></div>
+    <!-- Main Description -->
+	<div class="acuSection" style="background-color:#fafafa;">
+		<div class="set_width_1">
+		<div class="col_2">
+			<h2>Project Details</h2>
+			<p><strong>Client:</strong> AcuSites<br />
+				<strong>Involvement:</strong> Web Design, Front-end Development, Logo Design, Content Creation, Technical Support<br />
+			</p>
+			</div>
+		<div class="col_2"><img src="/assets/img/work/acusites/examplespng.png" alt="Phone"/></div>
+	</div> </div>
+
+	<!-- Item 1 -->
+	<div class="acuSection" style="background-color:#fff;">
+		<div class="set_width_1">
+		<div class="col_2"><img src="/assets/img/work/acusites/comic 2.png" alt="Phone"/></div>
+		<div class="col_2">
+			<h2>Logo &amp; Mascot in One</h2>
+			<p>
+			I created "Pointsy" the AcuSites mascot to enhance branding and user experience.  While maintaining a simple design that incorporates the Acupuncture field, Pointsy has human characteristics that were easily manipulated to form multiple gestures and expressions.</p></div>
+	</div> </div>
+
+
+	<!-- Item 2 -->
+	<div class="acuSection" style="background-color:#fafafa;">
+		<div class="set_width_1">
+<img src="/assets/img/work/acusites/designspng.png" alt="Phone"/><div class="acuPara">
+<h2 style="color:#fafafa;">20 Pre-built Templates</h2><div class="acuPara">
+<p style="margin-top:30px;">Prior to launching AcuSites, I created 20 theme templates using original graphics, icons, and imagery.  For interactive sample pages were also made available to showcase available layouts and animations.</p>
+	</div> </div></div></div>
+
+
+	<!-- Item 3 -->
+	<div class="acuSection" style="background-color:#fff;">
+		<div class="set_width_1">
+		<div class="col_2"><img src="/assets/img/work/acusites/tutorialspng.png" alt="Phone"/></div>
+		<div class="col_2">
+			<h2>Detailed Tutorial Section</h2>
+			<p>I created 18 detailed tutorials which were included with the launch of AcuSites to walk customers through the basics of updating and maintaining their website.  Each tutorial included step-by-step instructions with useful images and references.</p></div>
+	</div> </div>
+
+<!-- DON'T DELETE THIS SECTION-->
+	<div class="arrow-container">
+	<div class="work-up"><a href="#to-top-two"><i class="fa fa-arrow-left" id="arrow-up"></i><p>TO TOP</p></a></div>
+</div>
+	
+</div>
+
+</div>
+
+<!-- Project 5: ConnectMeVoice -->
+<div class="web_projects projectdrop_5"><div class="background-image background_project5">
+<div class="set_width_1"><div class="return-to-top close_x">X</div></div>
+	<div class="acuHeader" >
+		<h1 class="acuFont">ConnectMeVoice</h1><a name="content_top"></a>
+		<div class="rule_1"></div>
+		<h2 style="color:#df1c31; font-weight:400;">Web Design | Graphic Design | Web Development</h2>
+    </div>
+    <!-- Introduction -->
+	<div class="acuSection" style="padding-top:0px;">
+		<div class="set_width_1">
+		<div class="acuImg">
+			<div class="acu_image_container">
+		<img src="/assets/img/work/acusites/cmv-full.jpg" alt="Homepage">
+			</div>
+		</div>
+		<div class="acuPara">
+			<p style="color:#fff;">ConnectMeVoice is a Virtual Phone Service company that focuses on intra-office communication. With a new marketing campaign underway, the purpose of this project was to give ConnectMeVoice a sharper design that was optimized for click generation.</p>
+		</div>
+	</div>
+	</div></div>
+    <!-- Main Description -->
+	<div class="acuSection" style="background-color:#fff;">
+		<div class="set_width_1">
+		<div class="col_2"><img src="/assets/img/work/acusites/cmv_phone.jpg" alt="Phone"/></div>
+		<div class="col_2">
+			<h2>Project Details</h2>
+			<p><strong>Client:</strong> ConnectMeVoice<br />
+				<strong>Contractor:</strong> EmoryDay<br />
+				<strong>Involvement:</strong> Web Design, Web Development, Graphic Design, Site Maintenance<br />
+				<a class="view_site_button" href="www.connectmevoice.com" target="_blank">View Site</a>
+			</p>
+			</div>
+	</div> </div>
+
+	<!-- Main Description -->
+	<div class="acuSection" style="background-color:#3b3b43;">
+		<div class="set_width_1">
+		<div class="col_2">
+			<h2 style="color:#fff;">Landing Pages</h2>
+			<p style="color:#fff;">To help generate views during the redesign process, I created a series of eye-catching landing pages that were used extensively through subsequent marketing campaigns.</p></div>
+			<div class="col_2"><img src="/assets/img/work/acusites/cmv_landing.png" alt="Phone"/></div>
+	</div> </div>
+	
+
+	<!-- Banners Section -->
+	<div class="acuSection" style="background-color:#fff">
+		<div class="set_width_1">
+		<div class="acuPara">
+			<h2>Trade Show Banners</h2>
+			<img src="/assets/img/work/acusites/cmv_banners.png" />
+			<p style="margin-top:30px;">In addition to web design, development, and sitewide updates, I provided graphic design services for ConnectMeVoice including Business Cards, Brochures, and a set of three 33” x 88” trade show banners. </p>
+		</div>
+	</div>
+	</div>
+
+
+	
+	<div class="arrow-container">
+	<div class="work-up"><a href="#to-top-two"><i class="fa fa-arrow-left" id="arrow-up"></i><p>TO TOP</p></a></div>
+</div>
+	
+</div>
+
+</div>
+
+<!-- Project 6: Bob Porter -->
+<div class="web_projects projectdrop_6">
+<div class="set_width_1"><div class="return-to-top close_x">X</div></div>
+	<div class="acuHeader" style="background-color:#fafafa;">
+		<h1 class="acuFont">Bob Porter Construction Inc</h1><a name="content_top"></a>
+		<div class="rule_1"></div>
+		<h2 style="font-weight:400;">Logo Design</h2>
+    </div>
+    <!-- Introduction -->
+	<div class="acuSection" style="background-color:#fafafa; padding-top:0px;">
+		<div class="set_width_1">
+		<img src="/assets/img/work/acusites/porter_logo.png" alt="Homepage" style="max-width:800px; margin-bottom:30px;">
+		<div class="acuPara">
+			<p>Bob Porter Construction started as a small family business, then gradually grew into a large company.  The purpose of this project was to create a modern logo that reflected the companies original aesthetic while enhancing their professional appeal. </p>
+		</div>
+	</div>
+	</div>
+    <!-- Main Description -->
+	<div class="acuSection" style="background-color:#222533;">
+		<div class="set_width_1">
+		<div class="col_2">
+			<h2 style="color:#fff;">Project Details</h2>
+			<p style="color:#fff;"><strong>Client:</strong> Bob Porter Construction Inc<br />
+				<strong>Contractor:</strong> EmoryDay<br />
+				<strong>Involvement:</strong> Logo Design, Implementation<br />
+				<a class="view_site_button" href="http://www.porterco.net/" target="_blank">View Site</a>
+			</p>
+			</div>
+		<div class="col_2"><img src="/assets/img/work/acusites/porter_phone.png" alt="Phone"/></div>
+	</div> </div>
+	<!-- Before / After -->
+	<div class="acuSection" style="background-color:#fff;">
+		<div class="set_width_1">
+		<div class="col_2">
+			<!-- Start before/after -->
+			<div class="before_after_container">
+				<div class="before_after bf_rfc">
+				</div>
+
+	</div>
+			<!-- End before/after -->
+
+		</div>
+		<div class="col_2">
+			<h2>From Rastor to Vector</h2>
+			<p>While maintaining the original concept design, I recreated the Bob Porter logo using re-branded company colors and font-types.  </p>
+			<div class="wk-button-container">
+			<input class="wk-hvrButton wk-hvrButton1" id="porter_button" type="button" value="Before/After" />
+	</div>
+		</div></div>
+	</div>
+
+
+	
+	<div class="arrow-container">
+	<div class="work-up"><a href="#to-top-two"><i class="fa fa-arrow-left" id="arrow-up"></i><p>TO TOP</p></a></div>
+</div>
+	
+</div>
+
+</div>
+
+<!-- Project 7: Emerging Technologies -->
+<div class="web_projects projectdrop_7"><div class="background-image background_project7">
+<div class="set_width_1"><div class="return-to-top close_x">X</div></div>
+	<div class="acuHeader">
+		<h1 class="acuFont">Emerging Technologies</h1><a name="content_top"></a>
+		<div class="rule_1"></div>
+		<h2 style="color:#416ae2; font-weight:400;">Web Design | Web Development</h2>
+    </div>
+    <!-- Introduction -->
+	<div class="acuSection" style="padding-top:0px;">
+		<div class="set_width_1">
+		<div class="acuImg">
+			<div class="acu_image_container">
+		<img src="/assets/img/work/acusites/ETI_full.jpg" alt="Homepage">
+			</div>
+		</div>
+		<div class="acuPara">
+			<p style="color:#fff;">Emerging Technologies Institute is a private career school that was established over two decades ago and offers over two-hundred courses.  The purpose of this project was to enrich Emerging Technologies' online influence by completely redesigning their site and marketing content.  </p>
+		</div>
+	</div>
+	</div></div>
+    <!-- Main Description -->
+	<div class="acuSection" style="background-color:#fff;">
+		<div class="set_width_1">
+		<div class="col_2"><img src="/assets/img/work/acusites/eti_phone.jpg" alt="Phone"/></div>
+		<div class="col_2">
+			<h2>Project Details</h2>
+			<p><strong>Client:</strong> Emerging Technologies Institute<br />
+				<strong>Contractor:</strong> EmoryDay<br />
+				<strong>Involvement:</strong> Web Design, Web Development, Site Maintenance <br />
+				<a class="view_site_button" href="www.emergingtechonline.com/" target="_blank">View Site</a>
+			</p>
+			</div>
+	</div> </div>
+
+	<!-- One Paragraph -->
+	<div class="acuSection" style="background-color:#416ae2">
+		<div class="set_width_1">
+		<div class="acuPara">
+			<p style="color:#fff;">I was responsible for taking this project from it's initial redesign concept to full development. I also created various marketing materials for Emerging Technologies Institute including email designs and social media marketing materials.</p>
+		</div>
+	</div>
+	</div>
+	
+
+	<!-- Woo Commerce -->
+	<div class="acuSection" style="background-color:#fff;">
+		<div class="set_width_1">
+		<div class="col_2"><img src="/assets/img/work/acusites/eti_woo.jpg" alt="Phone"/></div>
+		<div class="col_2">
+			<h2>Recreation of Checkout with WooCommerce</h2>
+			<p>One of the greates challenges of the original website was landing online purchases.  To fix this, I recreated the Emerging Technologies Institute store using WooCommerce.  Both familiar and trustworthy, the new store layout greatly improved online purchase and click rates.</p></div>
+	</div> </div>
+
+	
+<!-- Blog Section -->
+	<div class="acuSection" style="background-color:#383838;">
+		<div class="set_width_1">
+		<div class="col_2">
+			<h2 style="color:#fff;">Fresh Blog Design with Individualized Posts</h2>
+			<p style="color:#fff;">As a part of the redesign effort, I recreated the Emerging Technologies Institute Blog and stylized each blog post to match the overall look of the website.</p></div>
+			<div class="col_2"><img src="/assets/img/work/acusites/eti-blog.png" alt="Phone"/></div>
+	</div> </div>
+	
+	<div class="arrow-container">
+	<div class="work-up"><a href="#to-top-two"><i class="fa fa-arrow-left" id="arrow-up"></i><p>TO TOP</p></a></div>
+</div>
+	
+</div>
+
+</div>
+
+<!-- Project 8: Stellar Insight -->
+<div class="web_projects projectdrop_8"><div class="background-image background_project8">
+<div class="set_width_1"><div class="return-to-top close_x">X</div></div>
+	<div class="acuHeader">
+		<h1 class="acuFont">Stellar Insight</h1><a name="content_top"></a>
+		<div class="rule_1"></div>
+		<h2 style="color:#2d62ad; font-weight:400;">Web Development | Graphic Design</h2>
+    </div>
+    <!-- Introduction -->
+	<div class="acuSection" style=" padding-top:0px;">
+		<div class="set_width_1">
+		<div class="acuImg">
+			<div class="acu_image_container">
+		<img src="/assets/img/work/acusites/stellar-full.jpg" alt="Homepage">
+			</div>
+		</div>
+		<div class="acuPara">
+			<p style="color:#fff;">Stellar Insight is a business growth consultation company that focuses on Strategic Planning, Executive and Team Coaching, and Facilitation. I created a new professional website for the company with easy site navigation and improved lead generation. </p>
+		</div>
+	</div>
+	</div></div>
+    <!-- Main Description -->
+	<div class="acuSection" style="background-color:#fff;">
+		<div class="set_width_1">
+		<div class="col_2">
+			<h2>Project Details</h2>
+			<p><strong>Client:</strong> Stellar Insight Inc<br />
+				<strong>Contractor:</strong> EmoryDay<br />
+				<strong>Involvement:</strong> Web Development, Graphic Design<br />
+				<a class="view_site_button" href="www.stellarinsightinc.com/" target="_blank">View Site</a>
+			</p>
+			</div>
+		<div class="col_2"><img src="/assets/img/work/acusites/stellar_phone.png" alt="Phone"/></div>
+	</div> </div>
+
+	<!-- One Paragraph -->
+	<div class="acuSection" style="background-color:#3375c6">
+		<div class="set_width_1">
+		<div class="acuPara">
+			<p style="color:#fff;">My primary role in this project was web development and graphic design.  I also helped redesign several of the subpages and assisted with email design and production.</p>
+		</div>
+	</div>
+	</div>
+	
+	<!-- Photo Generation -->
+	<div class="acuSection" style="background-color:#fafafa;">
+		<div class="set_width_1">
+		<div class="col_2"><img src="/assets/img/work/acusites/stellar-image.jpg" alt="Phone"/></div>
+		<div class="col_2">
+			<h2>Header Design</h2>
+			<p>Per the client's request, I created a custom header image illustrating the Companies imaginative vision. This image was creating using photomanimpulation with Adobe Photoshop.</p></div>
+	</div> </div>
+	
+
+	
+	<div class="arrow-container">
+	<div class="work-up"><a href="#to-top-two"><i class="fa fa-arrow-left" id="arrow-up"></i><p>TO TOP</p></a></div>
+</div>
+	
+</div>
+
+</div>
+
+<!-- Project 9: Microsoft Access Professionals -->
+<div class="web_projects projectdrop_9"><div class="background-image background_project9">
+<div class="set_width_1"><div class="return-to-top close_x">X</div></div>
+	<div class="acuHeader">
+		<h1 class="acuFont">Microsoft Access Professionals</h1><a name="content_top"></a>
+		<div class="rule_1"></div>
+		<h2 style="font-weight:400; color:#964444;">Web Development | Logo Design</h2>
+    </div>
+    <!-- Introduction -->
+	<div class="acuSection" style="padding-top:0px;">
+		<div class="set_width_1">
+		<div class="acuImg">
+			<div class="acu_image_container">
+		<img src="/assets/img/work/acusites/micro-full.jpg" alt="Homepage">
+			</div>
+		</div>
+		<div class="acuPara">
+			<p style="color:#fff;">Winning Solutions, Inc is a Microsoft Access database service provider.  The purpose of this project was to create a professional online presence for the company that optimized viewer retention and stood the test of time.</p>
+		</div>
+	</div>
+	</div></div>
+    <!-- Main Description -->
+	<div class="acuSection" style="background-color:#fff;">
+		<div class="set_width_1">
+		<div class="col_2"><img src="/assets/img/work/acusites/msa_phone.jpg" alt="Phone"/></div>
+		<div class="col_2">
+			<h2>Project Details</h2>
+			<p><strong>Client:</strong> Winning Solutions, Inc<br />
+				<strong>Contractor:</strong> EmoryDay<br />
+				<strong>Involvement:</strong> Web Development, Logo Design, Web Support<br />
+				<a class="view_site_button" href="https://msaccessprofessionals.com/" target="_blank">View Site</a>
+			</p>
+			</div>
+	</div> </div>
+	
+
+	<!-- One Paragraph -->
+	<div class="acuSection" style="background-color:#964444">
+		<div class="set_width_1">
+		<div class="acuPara">
+			<p style="color:#fff;">My primary role in this project was web development.  I also provided some minor web design tasks and created personalized email templates.</p>
+		</div>
+	</div>
+	</div>
+
+	
+	<div class="arrow-container">
+	<div class="work-up"><a href="#to-top-two"><i class="fa fa-arrow-left" id="arrow-up"></i><p>TO TOP</p></a></div>
+</div>
+	
+</div>
+
+</div>
+
+<!--==== END PROJECTS ====-->
 </body>
