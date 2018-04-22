@@ -1,0 +1,6 @@
+/**
+ * Owwl Carousel v2.2.1
+ * Copyright 2013-2017 David Deutsch
+ * Licensed under  ()
+ */
+.owwl-theme .owwl-dots,.owwl-theme .owwl-nav{text-align:center;-webkit-tap-highlight-color:transparent}.owwl-theme .owwl-nav{margin-top:10px}.owwl-theme .owwl-nav [class*=owwl-]{color:#FFF;font-size:14px;margin:5px;padding:4px 7px;background:#D6D6D6;display:inline-block;cursor:pointer;border-radius:3px}.owwl-theme .owwl-nav [class*=owwl-]:hover{background:#869791;color:#FFF;text-decoration:none}.owwl-theme .owwl-nav .disabled{opacity:.5;cursor:default}.owwl-theme .owwl-nav.disabled+.owwl-dots{margin-top:10px}.owwl-theme .owwl-dots .owwl-dot{display:inline-block;zoom:1}.owwl-theme .owwl-dots .owwl-dot span{width:10px;height:10px;margin:5px 7px;background:#D6D6D6;display:block;-webkit-backface-visibility:visible;transition:opacity .2s ease;border-radius:30px}.owwl-theme .owwl-dots .owwl-dot.active span,.owwl-theme .owwl-dots .owwl-dot:hover span{background:#869791}
