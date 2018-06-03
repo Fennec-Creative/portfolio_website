@@ -246,6 +246,7 @@ td, th {
 
 .thumbUnit {
   display:inline-block;
+  cursor:pointer;
 }
 
 .thumbUnit_small{
