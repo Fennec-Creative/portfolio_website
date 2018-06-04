@@ -926,10 +926,13 @@ header {
   }
 
   .skillItem{
-    text-align: center;
     position: relative;
     display: inline-block;
     width: 185px;
+  }
+
+  .skillItem p {
+    text-align:center;
   }
 
   #designBox ul{
@@ -2193,7 +2196,7 @@ section {
 }
 
 .thumbUnit_small{
-  width:90%;
+  width:100%;
 }
 }
 
