@@ -780,6 +780,7 @@ header {
     position: relative;
     display: inline-block;
     margin: 20px;
+    vertical-align:top;
   }
 
   .twoWork{
@@ -935,7 +936,7 @@ header {
     text-align:center;
   }
 
-  #designBox ul{
+  #designBox ul, #devBox ul{
     list-style-type: none;
     text-align: left;
     font-family: 'Source Sans Pro', sans-serif;
@@ -944,23 +945,11 @@ header {
     padding: 0px;
   }
 
-  #designBox {
-    bottom: 155px;
-  }
 
   #devBox ul{
-    list-style-type: none;
-    text-align: left;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: 0px;
     margin-left: 25px;
   }
 
-  #devBox{
-    bottom: 55px;
-  }
 
 .animation-target {
   -webkit-animation: animation 5000ms linear both;
