@@ -15,18 +15,21 @@ function acusites(){
 		e.preventDefault();
 		var x = $(this).attr('id');
 		$('.web_projects').hide();
-		$('.projectdrop_' + x).slideDown(500);
-
-		$("html, body").animate({scrollTop: $('#projects_top').offset().top 
+		$('.projectdrop_' + x).slideDown(300);
+		$('.site_third').hide();
+		$("html, body").animate({scrollTop: $('#projects_top_' + x).offset().top
 	}, 500);
 
 	});
 
 	$('.return-to-top').click(function(){
-		$('.web_projects').hide(350);
+		var y = $(this).closest('.web_projects');
+		var z = $(y).attr('id');
+		$('.web_projects').hide(300);
+		$('.site_third').slideDown(300);
+		$("html, body").animate({scrollTop: $('#nav_top_' + z).offset().top
+	}, 100);
 
-		$("html, body").animate({scrollTop: $('#top_div').offset().top
-	}, 500);
 	});
 }
 

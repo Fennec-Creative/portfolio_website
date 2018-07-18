@@ -329,6 +329,10 @@ h1, h3 {
   font-size: 10px;
   line-height: 1.2; }
 
+.white_toggle_text{
+  color:#fff !important;
+}
+
 p {
   margin: 0 0 20px 0; 
   text-align:left;
@@ -1203,6 +1207,13 @@ header {
     margin: 0 auto;
   }
 
+  .close_x{
+    height:30px !important;
+    width:30px !important;
+    font-size:19px !important;
+    top:10px !important;
+  }
+
    .barChart {
    width: 270px;
   }
@@ -1895,7 +1906,6 @@ section {
     }
 
     .site_third {
-      width:33%;
       display:inline-block;
       vertical-align:top;
     }
@@ -2141,12 +2151,25 @@ section {
 .site_third {
   width:49%;
 }
+
+.phone_pad_top{
+  padding-top:20px;
+}
 }
 
 @media only screen and (max-width: 870px) {
 .acuImg {
    width: 550px;
    height: 452.375px;
+   margin-bottom:15px !important;
+}
+
+.owl-next, .owl-prev{
+  display:none !important;
+}
+
+.acuSection{
+  padding: 20px 0;
 }
 
 .acu_image_container {
@@ -2154,6 +2177,14 @@ section {
    height:321px;
    top:20px;
    left:19px;
+}
+
+.large, h2 {
+  font-size:1.7em;
+}
+
+.acuFont {
+  font-size:2.5em !important;
 }
 }
 
@@ -2165,12 +2196,26 @@ section {
 .col_2 {
   width:100%;
 }
+
+.bf_rfc{
+  min-height:200px !important;
+  margin-bottom:0px;
+}
 }
 
 @media screen and (max-width: 665px) {
 .acuImg {
    width: 360px;
    height: 296.1px;
+}
+
+.background-image{
+  background-image:none !important;
+  background-color:#fafafa;
+}
+
+.white_toggle_text {
+  color:#2E2D33 !important;
 }
 
 .acu_image_container {
