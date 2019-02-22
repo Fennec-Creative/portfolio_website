@@ -529,10 +529,6 @@ header {
     padding-top: 40px;
   }
 
-  #abouthh {
-    text-align:left;
-    padding:0px !important;
-  }
 
   #rings {
     background-color: #B8D8D8;
@@ -967,6 +963,11 @@ header {
   -o-animation: animation 5000ms linear both;
   animation: animation 5000ms linear both;
 }
+
+#abouthh {
+    text-align:left;
+    padding:0px !important;
+  }
 
 /* Generated with Bounce.js. Edit at https://goo.gl/BJxUMH */
 
