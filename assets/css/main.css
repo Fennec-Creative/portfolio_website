@@ -529,6 +529,11 @@ header {
     padding-top: 40px;
   }
 
+  #abouthh {
+    text-align:left;
+    padding:0px !important;
+  }
+
   #rings {
     background-color: #B8D8D8;
     margin-bottom: 40px;
